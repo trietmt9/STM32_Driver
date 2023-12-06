@@ -1,5 +1,6 @@
 #ifdef INC_STM32F446XX_H_
 #define INC_STM32F446XX_H_
+#include <stdint.h>
 
 /* 
  *Define base Address of SRAM and FLASH memories
@@ -62,5 +63,39 @@
 #define USART1_BASE_ADDRESS             (APB2_PERIPHERAL_BASE + 0x1000UL)
 #define USART6_BASE_ADDRESS             (APB2_PERIPHERAL_BASE + 0x1400UL)
 #define SYSCFG_BASE_ADDRESS             (APB2_PERIPHERAL_BASE + 0x3800UL)
+
+
+/* 
+ * Define peripheral register structure for GPIO  
+ */
+
+typedef struct 
+{
+    volatile uint32_t MODER;                            /* Address offset: 0x00*/
+    volatile uint32_t OTYPER;                           /* Address offset: 0x04*/
+    volatile uint32_t OSPEEDR;                          /* Address offset: 0x08*/
+    volatile uint32_t PUPDR;                            /* Address offset: 0x0C*/
+    volatile uint32_t IDR;                              /* Address offset: 0x10*/
+    volatile uint32_t ODR;                              /* Address offset: 0x14*/
+    volatile uint32_t BSRRL;                            /* Address offset: 0x18*/
+    volatile uint32_t BSRRH;                            /* Address offset: 0x1A*/
+    volatile uint32_t LCKR;                             /* Address offset: 0x1C*/
+    volatile uint32_t AFR[2];                           /* Address offset: 0x20-0X24*/
+
+}GPIO_RegDef_t;
+
+/* 
+ * Peripheral definitions
+ */
+
+#define GPIOA                           ((GPIO_RegDef_t*)GPIOA_BASE_ADDRESS)
+#define GPIOB                           ((GPIO_RegDef_t*)GPIOB_BASE_ADDRESS)
+#define GPIOC                           ((GPIO_RegDef_t*)GPIOC_BASE_ADDRESS)
+#define GPIOD                           ((GPIO_RegDef_t*)GPIOD_BASE_ADDRESS)
+#define GPIOE                           ((GPIO_RegDef_t*)GPIOE_BASE_ADDRESS)
+#define GPIOF                           ((GPIO_RegDef_t*)GPIOF_BASE_ADDRESS)
+#define GPIOG                           ((GPIO_RegDef_t*)GPIOG_BASE_ADDRESS)
+#define GPIOH                           ((GPIO_RegDef_t*)GPIOH_BASE_ADDRESS)
+
 
 #endif
