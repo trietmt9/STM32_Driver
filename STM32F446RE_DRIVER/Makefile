@@ -38,6 +38,7 @@ BUILD_DIR = build
 C_SOURCES =  \
 Src/main.c \
 Drivers/DRV/Src/stm32f446xx.c \
+Drivers/DRV/Src/stm32f446xx_gpio.c \
 # ASM sources
 # ASM sourcesASM_SOURCES =  \
 startup_stm32f446xx.s

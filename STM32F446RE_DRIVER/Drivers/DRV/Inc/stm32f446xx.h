@@ -1,9 +1,17 @@
-#ifdef INC_STM32F446XX_H_
-#define INC_STM32F446XX_H_
-#include <stdint.h>
 
+#include <stdint.h>
 /* 
- *Define base Address of SRAM and FLASH memories
+ * General macros
+ */
+
+#define ENABLE                          1
+#define DISABLE                         0
+#define SET                             ENABLE
+#define RESET                           DISABLE
+#define GPIO_PIN_SET                    SET 
+#define GPIO_PIN_RESET                  RESET 
+/* 
+ * Define base Address of SRAM and FLASH memories
  */
 
 /* <! Read in datasheet Memory map section to find SRAM base address>*/
@@ -15,7 +23,7 @@
 #define SRAM                            SRAM1_BASE_ADDRESS /* Use this macro as main SRAM*/
 
 /* 
- *Define base Address of AHBx and APBx Bus
+ * Define base Address of AHBx and APBx Bus
  */
 
 /* !<Read in datasheet STM32F446xx register boundary addresses section>*/ 
@@ -238,4 +246,3 @@ typedef struct
  */
 
 #define SYSCFG_PCLK_EN()                (RCC->APB2ENR&=~ (1<<14))
-#endif
