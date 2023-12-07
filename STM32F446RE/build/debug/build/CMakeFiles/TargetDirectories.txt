@@ -1,3 +1,0 @@
-C:/Users/pc/Documents/STM32_Driver/STM32F446RE/build/debug/build/CMakeFiles/rebuild_cache.dir
-C:/Users/pc/Documents/STM32_Driver/STM32F446RE/build/debug/build/CMakeFiles/STM32F446RE.dir
-C:/Users/pc/Documents/STM32_Driver/STM32F446RE/build/debug/build/CMakeFiles/edit_cache.dir
