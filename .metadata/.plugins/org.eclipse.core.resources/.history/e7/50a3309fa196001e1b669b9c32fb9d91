@@ -1,0 +1,192 @@
+#include <stm32f446rxx_gpio.h>
+
+/******************************************************************************************
+ *                                  API supports by this driver
+ *                             Check API in the function definitions
+ ******************************************************************************************/
+
+/*****************************************************************
+ * @fn          - GPIO_Init
+ * @brief       - This function will set the GPIO peripheral
+ * @param[in]   - Base address of each GPIO peripheral
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_Init(GPIO_Handle_t* pGPIOHandle)
+{
+    /* 1. Configure the mode of the pin */
+
+    /* 2. Configure the speed output of the pin*/
+
+    /* 3. Configure the Pull Up and Pull Down setting*/
+
+    /* 4. Configure the output type of the pin */
+
+    /* 5 Configure alternate function */
+}
+
+/*****************************************************************
+ * @fn          - GPIO_DeInit
+ * @brief       - This function will reset the given GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_DeInit(GPIO_RegDef_t* pGPIOx)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_PCLK_CTRL
+ * @brief       - This function will enable or disable peripheral clock for the given GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - Enable or Disable macros
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_PCLK_CTRL(GPIO_RegDef_t* pGPIOx, uint8_t EnOrDi)
+{
+    if(EnOrDi == ENABLE)
+    {
+        if(pGPIOx == GPIOA)      GPIOA_PCLK_EN();
+        else if(pGPIOx == GPIOB) GPIOB_PCLK_EN();
+        else if(pGPIOx == GPIOC) GPIOC_PCLK_EN();
+        else if(pGPIOx == GPIOD) GPIOD_PCLK_EN();
+        else if(pGPIOx == GPIOE) GPIOE_PCLK_EN();
+        else if(pGPIOx == GPIOF) GPIOF_PCLK_EN();
+        else if(pGPIOx == GPIOG) GPIOG_PCLK_EN();
+        else if(pGPIOx == GPIOH) GPIOH_PCLK_EN();
+    }
+    else
+    {
+        if(pGPIOx == GPIOA)      GPIOA_PCLK_DI();
+        else if(pGPIOx == GPIOB) GPIOB_PCLK_DI();
+        else if(pGPIOx == GPIOC) GPIOC_PCLK_DI();
+        else if(pGPIOx == GPIOD) GPIOD_PCLK_DI();
+        else if(pGPIOx == GPIOE) GPIOE_PCLK_DI();
+        else if(pGPIOx == GPIOF) GPIOF_PCLK_DI();
+        else if(pGPIOx == GPIOG) GPIOG_PCLK_DI();
+        else if(pGPIOx == GPIOH) GPIOH_PCLK_DI();
+    }
+}
+
+/*****************************************************************
+ * @fn          - GPIO_ReadPin
+ * @brief       - This function will read digital input of the given GPIO pin and GPIO Port
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - Pin number in  GPIO
+ * @param[in]   -
+ *
+ * @return      - unsigned 8 bit integer
+ *
+ * @note        - None
+ *****************************************************************/
+uint8_t GPIO_ReadPin(GPIO_RegDef_t* pGPIOx, uint8_t PinNumber)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_ReadPort
+ * @brief       - This function will read digital input of the the given GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ *
+ * @return      - unsigned 16 bit integer
+ *
+ * @note        - None
+ *****************************************************************/
+uint16_t GPIO_ReadPort(GPIO_RegDef_t* pGPIOx)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_WritePin
+ * @brief       - This function write a digital signal output of the given GPIO pin and GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - Pin number
+ * @param[in]   - SET or RESET macros
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_WritePin(GPIO_RegDef_t* pGPIOx, uint8_t PinNumber, uint8_t Value)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_WritePort
+ * @brief       - This function write a digital signal output of the given GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - Enable or Disable macros
+ * @param[in]   -
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_WritePort(GPIO_RegDef_t* pGPIOx, uint16_t Value)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_TogglePin
+ * @brief       - This function will toggle the given output GPIO pin and GPIO port
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - Pin number
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_TogglePin(GPIO_RegDef_t* pGPIOx, uint8_t PinNumber)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_IRQ_Config
+ * @brief       - This function will configure the interrupt request
+ * @param[in]   - Base address of each GPIO peripheral
+ * @param[in]   - IRQ Priority
+ * @param[in]   - Enable or Disable macros
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_IRQ_Config(uint8_t IRQNumber, uint8_t IRQPriority, uint8_t EnOrDi)
+{
+
+}
+
+/*****************************************************************
+ * @fn          - GPIO_ReadPin
+ * @brief       - This function will handle the IRQ
+ * @param[in]   - Pin number
+ *
+ * @return      - None
+ *
+ * @note        - None
+ *****************************************************************/
+void GPIO_IRQ_Handling(uint8_t PinNumber)
+{
+
+}/*
+ * stm32f446xx_gpio_driver.c
+ *
+ *  Created on: Dec 9, 2023
+ *      Author: pc
+ */
+
+

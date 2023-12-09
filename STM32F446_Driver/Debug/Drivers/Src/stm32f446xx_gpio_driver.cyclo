@@ -1,0 +1,10 @@
+stm32f446xx_gpio_driver.c:17:6:GPIO_Init	1
+stm32f446xx_gpio_driver.c:39:6:GPIO_DeInit	1
+stm32f446xx_gpio_driver.c:54:6:GPIO_PCLK_CTRL	18
+stm32f446xx_gpio_driver.c:91:9:GPIO_ReadPin	1
+stm32f446xx_gpio_driver.c:105:10:GPIO_ReadPort	1
+stm32f446xx_gpio_driver.c:121:6:GPIO_WritePin	1
+stm32f446xx_gpio_driver.c:137:6:GPIO_WritePort	1
+stm32f446xx_gpio_driver.c:152:6:GPIO_TogglePin	1
+stm32f446xx_gpio_driver.c:168:6:GPIO_IRQ_Config	1
+stm32f446xx_gpio_driver.c:182:6:GPIO_IRQ_Handling	1

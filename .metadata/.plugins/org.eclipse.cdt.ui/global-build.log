@@ -1,0 +1,22 @@
+21:50:32 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/Src/stm32f446xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/Src/stm32f446xx_gpio_driver.d" -MT"Drivers/Src/stm32f446xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/stm32f446xx_gpio_driver.o"
+../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_ReadPin':
+../Drivers/Src/stm32f446xx_gpio_driver.c:94:1: warning: control reaches end of non-void function [-Wreturn-type]
+   94 | }
+      | ^
+../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_ReadPort':
+../Drivers/Src/stm32f446xx_gpio_driver.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+  108 | }
+      | ^
+arm-none-eabi-gcc -o "STM32F446_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\Documents\STM32_Driver\STM32F446_Driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F446_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F446_Driver.elf
+ 
+arm-none-eabi-size   STM32F446_Driver.elf 
+arm-none-eabi-objdump -h -S  STM32F446_Driver.elf  > "STM32F446_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+    704	      8	   1568	   2280	    8e8	STM32F446_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F446_Driver.list
+ 
