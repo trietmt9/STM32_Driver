@@ -18,9 +18,23 @@
 
 #include <stdint.h>
 #include <stm32f446xx.h>
+#include <stm32f446xx_gpio_driver.h>
 
 int main(void)
 {
+    GPIO_Handle_t GPIO_LED;
+    GPIO_LED.pGPIOx = GPIOA;
+    GPIO_LED.GPIO_PinCFG.GPIO_PinNumber = GPIO_PIN_5;
+    GPIO_LED.GPIO_PinCFG.GPIO_PinMode = GPIO_MODE_OUTPUT;
+    GPIO_LED.GPIO_PinCFG.GPIO_PinOPType = GPIO_OUTPUT_TYPE_PP;
+    GPIO_LED.GPIO_PinCFG.GPIO_PinSpeed = GPIO_SPEED_LOW;
+    GPIO_LED.GPIO_PinCFG.GPIO_PuPd = GPIO_NO_PUPD;
+
+    GPIO_PCLK_CTRL(GPIOA);
+    GPIO_Init(&GPIO_LED);
     /* Loop forever */
-	for(;;);
+	while(1)
+    {
+        GPIO_WritePort(GPIOA, GPIO_PIN_SET);
+    }
 }

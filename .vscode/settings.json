@@ -3,7 +3,10 @@
         "stm32f446xx.h": "c",
         "stm32f401xc.h": "c",
         "stm32f4xx.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "core_cm4.h": "c",
+        "stdint.h": "c",
+        "stm32f446xx_gpio_driver.h": "c"
     },
     "C_Cpp.dimInactiveRegions": false
 }

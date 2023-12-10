@@ -1,22 +1,173 @@
-21:50:32 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
+21:59:03 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
 make -j16 all 
-arm-none-eabi-gcc "../Drivers/Src/stm32f446xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/Src/stm32f446xx_gpio_driver.d" -MT"Drivers/Src/stm32f446xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/Src/stm32f446xx_gpio_driver.o"
-../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_ReadPin':
-../Drivers/Src/stm32f446xx_gpio_driver.c:94:1: warning: control reaches end of non-void function [-Wreturn-type]
-   94 | }
-      | ^
-../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_ReadPort':
-../Drivers/Src/stm32f446xx_gpio_driver.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
-  108 | }
-      | ^
-arm-none-eabi-gcc -o "STM32F446_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\Documents\STM32_Driver\STM32F446_Driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F446_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Drivers/Src/stm32f446xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I"C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/Src/stm32f446xx_gpio_driver.d" -MT"Drivers/Src/stm32f446xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/Src/stm32f446xx_gpio_driver.o"
+In file included from C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx_gpio_driver.h:10,
+                 from ../Drivers/Src/stm32f446xx_gpio_driver.c:1:
+../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_DeInit':
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10353:44: warning: statement with no effect [-Wunused-value]
+10353 | #define RCC_AHB1RSTR_GPIOARST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOARST_Pos) /*!< 0x00000001 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10354:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOARST_Msk'
+10354 | #define RCC_AHB1RSTR_GPIOARST              RCC_AHB1RSTR_GPIOARST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:66:33: note: in expansion of macro 'RCC_AHB1RSTR_GPIOARST'
+   66 |     if(pGPIOx == GPIOA)         RCC_AHB1RSTR_GPIOARST;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10356:44: warning: statement with no effect [-Wunused-value]
+10356 | #define RCC_AHB1RSTR_GPIOBRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOBRST_Pos) /*!< 0x00000002 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10357:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOBRST_Msk'
+10357 | #define RCC_AHB1RSTR_GPIOBRST              RCC_AHB1RSTR_GPIOBRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:67:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOBRST'
+   67 |     else if(pGPIOx == GPIOB)  RCC_AHB1RSTR_GPIOBRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10359:44: warning: statement with no effect [-Wunused-value]
+10359 | #define RCC_AHB1RSTR_GPIOCRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOCRST_Pos) /*!< 0x00000004 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10360:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOCRST_Msk'
+10360 | #define RCC_AHB1RSTR_GPIOCRST              RCC_AHB1RSTR_GPIOCRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:68:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOCRST'
+   68 |     else if(pGPIOx == GPIOC)  RCC_AHB1RSTR_GPIOCRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10362:44: warning: statement with no effect [-Wunused-value]
+10362 | #define RCC_AHB1RSTR_GPIODRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIODRST_Pos) /*!< 0x00000008 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10363:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIODRST_Msk'
+10363 | #define RCC_AHB1RSTR_GPIODRST              RCC_AHB1RSTR_GPIODRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:69:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIODRST'
+   69 |     else if(pGPIOx == GPIOD)  RCC_AHB1RSTR_GPIODRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10365:44: warning: statement with no effect [-Wunused-value]
+10365 | #define RCC_AHB1RSTR_GPIOERST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOERST_Pos) /*!< 0x00000010 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10366:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOERST_Msk'
+10366 | #define RCC_AHB1RSTR_GPIOERST              RCC_AHB1RSTR_GPIOERST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:70:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOERST'
+   70 |     else if(pGPIOx == GPIOE)  RCC_AHB1RSTR_GPIOERST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10368:44: warning: statement with no effect [-Wunused-value]
+10368 | #define RCC_AHB1RSTR_GPIOFRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOFRST_Pos) /*!< 0x00000020 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10369:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOFRST_Msk'
+10369 | #define RCC_AHB1RSTR_GPIOFRST              RCC_AHB1RSTR_GPIOFRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:71:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOFRST'
+   71 |     else if(pGPIOx == GPIOF)  RCC_AHB1RSTR_GPIOFRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10371:44: warning: statement with no effect [-Wunused-value]
+10371 | #define RCC_AHB1RSTR_GPIOGRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOGRST_Pos) /*!< 0x00000040 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10372:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOGRST_Msk'
+10372 | #define RCC_AHB1RSTR_GPIOGRST              RCC_AHB1RSTR_GPIOGRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:72:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOGRST'
+   72 |     else if(pGPIOx == GPIOG)  RCC_AHB1RSTR_GPIOGRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10374:44: warning: statement with no effect [-Wunused-value]
+10374 | #define RCC_AHB1RSTR_GPIOHRST_Msk          (0x1UL << RCC_AHB1RSTR_GPIOHRST_Pos) /*!< 0x00000080 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10375:44: note: in expansion of macro 'RCC_AHB1RSTR_GPIOHRST_Msk'
+10375 | #define RCC_AHB1RSTR_GPIOHRST              RCC_AHB1RSTR_GPIOHRST_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:73:31: note: in expansion of macro 'RCC_AHB1RSTR_GPIOHRST'
+   73 |     else if(pGPIOx == GPIOH)  RCC_AHB1RSTR_GPIOHRST;
+      |                               ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c: In function 'GPIO_PCLK_CTRL':
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10534:44: warning: statement with no effect [-Wunused-value]
+10534 | #define RCC_AHB1ENR_GPIOAEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOAEN_Pos)   /*!< 0x00000001 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10535:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOAEN_Msk'
+10535 | #define RCC_AHB1ENR_GPIOAEN                RCC_AHB1ENR_GPIOAEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:88:33: note: in expansion of macro 'RCC_AHB1ENR_GPIOAEN'
+   88 |     if(pGPIOx == GPIOA)         RCC_AHB1ENR_GPIOAEN;
+      |                                 ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10537:44: warning: statement with no effect [-Wunused-value]
+10537 | #define RCC_AHB1ENR_GPIOBEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOBEN_Pos)   /*!< 0x00000002 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10538:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOBEN_Msk'
+10538 | #define RCC_AHB1ENR_GPIOBEN                RCC_AHB1ENR_GPIOBEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:89:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOBEN'
+   89 |     else if(pGPIOx == GPIOB)  RCC_AHB1ENR_GPIOBEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10540:44: warning: statement with no effect [-Wunused-value]
+10540 | #define RCC_AHB1ENR_GPIOCEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOCEN_Pos)   /*!< 0x00000004 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10541:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOCEN_Msk'
+10541 | #define RCC_AHB1ENR_GPIOCEN                RCC_AHB1ENR_GPIOCEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:90:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOCEN'
+   90 |     else if(pGPIOx == GPIOC)  RCC_AHB1ENR_GPIOCEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10543:44: warning: statement with no effect [-Wunused-value]
+10543 | #define RCC_AHB1ENR_GPIODEN_Msk            (0x1UL << RCC_AHB1ENR_GPIODEN_Pos)   /*!< 0x00000008 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10544:44: note: in expansion of macro 'RCC_AHB1ENR_GPIODEN_Msk'
+10544 | #define RCC_AHB1ENR_GPIODEN                RCC_AHB1ENR_GPIODEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:91:31: note: in expansion of macro 'RCC_AHB1ENR_GPIODEN'
+   91 |     else if(pGPIOx == GPIOD)  RCC_AHB1ENR_GPIODEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10546:44: warning: statement with no effect [-Wunused-value]
+10546 | #define RCC_AHB1ENR_GPIOEEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOEEN_Pos)   /*!< 0x00000010 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10547:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN_Msk'
+10547 | #define RCC_AHB1ENR_GPIOEEN                RCC_AHB1ENR_GPIOEEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:92:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOEEN'
+   92 |     else if(pGPIOx == GPIOE)  RCC_AHB1ENR_GPIOEEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10549:44: warning: statement with no effect [-Wunused-value]
+10549 | #define RCC_AHB1ENR_GPIOFEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOFEN_Pos)   /*!< 0x00000020 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10550:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOFEN_Msk'
+10550 | #define RCC_AHB1ENR_GPIOFEN                RCC_AHB1ENR_GPIOFEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:93:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOFEN'
+   93 |     else if(pGPIOx == GPIOF)  RCC_AHB1ENR_GPIOFEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10552:44: warning: statement with no effect [-Wunused-value]
+10552 | #define RCC_AHB1ENR_GPIOGEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOGEN_Pos)   /*!< 0x00000040 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10553:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOGEN_Msk'
+10553 | #define RCC_AHB1ENR_GPIOGEN                RCC_AHB1ENR_GPIOGEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:94:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOGEN'
+   94 |     else if(pGPIOx == GPIOG)  RCC_AHB1ENR_GPIOGEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10555:44: warning: statement with no effect [-Wunused-value]
+10555 | #define RCC_AHB1ENR_GPIOHEN_Msk            (0x1UL << RCC_AHB1ENR_GPIOHEN_Pos)   /*!< 0x00000080 */
+      |                                            ^
+C:/Users/pc/Documents/STM32_Driver/STM32F446_Driver/Drivers/Inc/stm32f446xx.h:10556:44: note: in expansion of macro 'RCC_AHB1ENR_GPIOHEN_Msk'
+10556 | #define RCC_AHB1ENR_GPIOHEN                RCC_AHB1ENR_GPIOHEN_Msk
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/Src/stm32f446xx_gpio_driver.c:95:31: note: in expansion of macro 'RCC_AHB1ENR_GPIOHEN'
+   95 |     else if(pGPIOx == GPIOH)  RCC_AHB1ENR_GPIOHEN;
+      |                               ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32F446_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\Documents\STM32_Driver\STM32F446_Driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F446_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: STM32F446_Driver.elf
  
 arm-none-eabi-size   STM32F446_Driver.elf 
 arm-none-eabi-objdump -h -S  STM32F446_Driver.elf  > "STM32F446_Driver.list"
    text	   data	    bss	    dec	    hex	filename
-    704	      8	   1568	   2280	    8e8	STM32F446_Driver.elf
+   1200	      8	   1568	   2776	    ad8	STM32F446_Driver.elf
 Finished building: default.size.stdout
  
 Finished building: STM32F446_Driver.list
+ 
+22:00:39 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
+make -j16 all 
+arm-none-eabi-size   STM32F446_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1200	      8	   1568	   2776	    ad8	STM32F446_Driver.elf
+Finished building: default.size.stdout
  
