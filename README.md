@@ -7,4 +7,4 @@
 ### GPIO driver 
 - GPIO driver is use for controlling GPIO peripheral in the STM32F4 series 
 - It contain APIs like: GPIO_Write_Pin, GPIO_Read_Pin, GPIO_Write_Port, GPIO_Read_Port, GPIO_IQR
-  
+![GPIO](Images/GPIO.png)
