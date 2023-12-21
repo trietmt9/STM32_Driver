@@ -1,10 +1,10 @@
-22:00:39 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
+20:48:55 **** Incremental Build of configuration Debug for project STM32F446_Driver ****
 make -j16 all 
-arm-none-eabi-size   STM32F446_Driver.elf 
+arm-none-eabi-size  STM32F446_Driver.elf 
    text	   data	    bss	    dec	    hex	filename
-   1200	      8	   1568	   2776	    ad8	STM32F446_Driver.elf
+    948	     16	   1972	   2936	    b78	STM32F446_Driver.elf
 Finished building: default.size.stdout
  
 
-22:00:39 Build Finished. 0 errors, 0 warnings. (took 165ms)
+20:48:55 Build Finished. 0 errors, 0 warnings. (took 140ms)
 

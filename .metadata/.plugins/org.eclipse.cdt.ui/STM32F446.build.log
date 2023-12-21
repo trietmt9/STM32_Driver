@@ -1,0 +1,10 @@
+20:22:41 **** Incremental Build of configuration Debug for project STM32F446 ****
+make -j16 all 
+arm-none-eabi-size  STM32F446.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1200	      8	   1568	   2776	    ad8	STM32F446.elf
+Finished building: default.size.stdout
+ 
+
+20:22:41 Build Finished. 0 errors, 0 warnings. (took 134ms)
+

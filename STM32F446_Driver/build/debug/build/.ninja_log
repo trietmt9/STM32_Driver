@@ -1,7 +1,0 @@
-# ninja log v5
-14	61	7238391076051189	CMakeFiles/STM32F446_Driver.dir/Startup/startup_stm32f446retx.s.obj	43ee94badad0a9e0
-1	72	7238391076151572	CMakeFiles/STM32F446_Driver.dir/Drivers/Src/stm32f446xx_gpio_driver.c.obj	8aca827780280153
-4	63	7238391076071126	CMakeFiles/STM32F446_Driver.dir/Src/main.c.obj	fdd172a3e3a883e2
-7	77	7238391076216428	CMakeFiles/STM32F446_Driver.dir/Src/sysmem.c.obj	2bc86852d186bbce
-10	114	7238391076564214	CMakeFiles/STM32F446_Driver.dir/Src/syscalls.c.obj	3d31485a3b8bfff8
-114	230	7238391077291838	STM32F446_Driver.elf	19a3fa459999481f
