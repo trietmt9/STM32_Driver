@@ -5,8 +5,8 @@
  *      Author: trietmt
  */
 
-#ifndef INC_STM32F4XX_H_
-#define INC_STM32F4XX_H_
+#ifndef INC_STM32F446XX_H_
+#define INC_STM32F446XX_H_
 #include <stdint.h>
 
 //define volatile type for each peripheral register 

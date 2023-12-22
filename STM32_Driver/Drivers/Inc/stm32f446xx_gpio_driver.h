@@ -5,9 +5,9 @@
  *      Author: trietmt9
  */
 
-#ifndef INC_STM32F4XX_GPIO_DRIVER_H_
-#define INC_STM32F4XX_GPIO_DRIVER_H_
-#include <stm32f4xx.h>
+#ifndef INC_STM32F446XX_GPIO_DRIVER_H_
+#define INC_STM32F446XX_GPIO_DRIVER_H_
+#include <stm32f446xx.h>
 
 typedef struct 
 {
@@ -25,7 +25,10 @@ typedef enum
     GPIO_INPUT = 0,
     GPIO_OUTPUT,
     GPIO_ALTERNATE,
-    GPIO_ANALOG 
+    GPIO_ANALOG,
+    GPIO_IT_FALLING,
+    GPIO_IT_RISING,
+    GPIO_IT_FALLING_RISING 
 
 }GPIO_MODE;
 

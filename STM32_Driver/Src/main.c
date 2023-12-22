@@ -4,8 +4,8 @@
  *  Created on: Dec 23, 2023
  *      Author: trietmt9
  */
-#include <stm32f4xx.h>
-#include <stm32f4xx_gpio_driver.h>
+#include <stm32f446xx.h>
+#include <stm32f446xx_gpio_driver.h>
 void GPIO_Init(void);
 
 int main(void)
