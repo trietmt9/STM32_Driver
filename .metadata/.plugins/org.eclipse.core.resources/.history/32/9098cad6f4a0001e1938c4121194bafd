@@ -10,7 +10,7 @@ void GPIO_Init(void);
 int main(void)
 {
     GPIO_Init();
-    DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
+    DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, RESET);
 
 }
 
