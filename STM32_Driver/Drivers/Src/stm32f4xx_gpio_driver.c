@@ -7,11 +7,16 @@
 
 #include <stm32f4xx_gpio_driver.h>
 
-/*
- * Peripheral clock control APIs
- *
+/*******************************************************
+ * @fn                     - DRV_GPIO_Pclkcontrol
  * 
- */
+ * @brief                  - Enable or Disable peripheral clock 
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - EnOrDi: Enable or Disable 
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi)
 {
     if (EnOrDi == ENABLE)
@@ -39,11 +44,16 @@ void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi)
     
 }
 
-/*
- * Peripheral clock control APIs
- *
+/*******************************************************
+ * @fn                     - DRV_GPIO_Init
  * 
- */
+ * @brief                  - Initialize GPIO 
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - pGPIOConfig: Pin configuration variable
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig)
 {
     uint32_t temp; 
@@ -90,11 +100,15 @@ void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig)
 
 }
 
-/*
- * Peripheral clock control APIs
- *
+/*******************************************************
+ * @fn                     - DRV_GPIO_DeInit
  * 
- */
+ * @brief                  - Reset GPIO register 
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_DeInit(GPIO_TypeDef_t* pGPIOx)
 {
         if(pGPIOx == GPIOA) GPIOA_REG_RESET();
@@ -107,23 +121,50 @@ void DRV_GPIO_DeInit(GPIO_TypeDef_t* pGPIOx)
         else if(pGPIOx == GPIOH) GPIOH_REG_RESET();
 }
 
-/*
- * Peripheral clock control APIs
- *
+/*******************************************************
+ * @fn                     - DRV_GPIO_ReadPin
  * 
- */
+ * @brief                  - Read data from pin 
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - PinNumber: Pin Number  
+ * 
+ * @return                 - 8 bits unsigned integer 
+********************************************************/
 uint8_t  DRV_GPIO_ReadPin(GPIO_TypeDef_t* pGPIOx, uint8_t PinNumber)
 {
     uint8_t Value; 
     Value = (uint8_t) (pGPIOx->IDR >> PinNumber) & 0x01U;
     return Value;
 }
+
+/*******************************************************
+ * @fn                     - DRV_GPIO_ReadPort
+ * 
+ * @brief                  - Read data from port
+ * 
+ * @param                  - pGPIOx: Port of  the MCU 
+ * 
+ * @return                 - 16 bits unsigned integer 
+********************************************************/
 uint16_t DRV_GPIO_ReadPort(GPIO_TypeDef_t* pGPIOx)
 {
     uint16_t Value; 
     Value = (uint16_t) pGPIOx->IDR;
     return Value;
 }
+
+/*******************************************************
+ * @fn                     - DRV_GPIO_WritePin
+ * 
+ * @brief                  - Write data to attached pin 
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - PinNumber: Pin Number
+ * @param                  - Value: SET or RESET level to attached pin
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_WritePin(GPIO_TypeDef_t* pGPIOx, uint8_t PinNumber ,Pin_State Value)
 {
     if(Value == SET_PIN || Value == SET)
@@ -135,10 +176,32 @@ void DRV_GPIO_WritePin(GPIO_TypeDef_t* pGPIOx, uint8_t PinNumber ,Pin_State Valu
         pGPIOx->ODR &= ~(1<<PinNumber);
     }
 }
+
+/*******************************************************
+ * @fn                     - DRV_GPIO_WritePort
+ * 
+ * @brief                  - Write data to attched port
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - Value: SET or RESET level to attached port
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_WritePort(GPIO_TypeDef_t* pGPIOx, Pin_State Value)
 {
     pGPIOx->ODR = Value;
 }
+
+/*******************************************************
+ * @fn                     - DRV_GPIO_WritePort
+ * 
+ * @brief                  - Write data to attched port
+ * 
+ * @param                  - pGPIOx: Port of  the MCU
+ * @param                  - PinNumber: Pin number of the MCU
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_GPIO_TogglePin(GPIO_TypeDef_t* pGPIOx, uint8_t PinNumber)
 {
     pGPIOx->ODR ^= (1 << PinNumber);

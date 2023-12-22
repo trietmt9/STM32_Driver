@@ -1,8 +1,8 @@
 ../Drivers/Src/stm32f4xx_gpio_driver.c:15:6:DRV_GPIO_Pclkcontrol	18
 ../Drivers/Src/stm32f4xx_gpio_driver.c:47:6:DRV_GPIO_Init	3
 ../Drivers/Src/stm32f4xx_gpio_driver.c:98:6:DRV_GPIO_DeInit	9
-../Drivers/Src/stm32f4xx_gpio_driver.c:115:10:DRV_GPIO_ReadPin	1
-../Drivers/Src/stm32f4xx_gpio_driver.c:121:10:DRV_GPIO_ReadPort	1
-../Drivers/Src/stm32f4xx_gpio_driver.c:127:6:DRV_GPIO_WritePin	3
-../Drivers/Src/stm32f4xx_gpio_driver.c:138:6:DRV_GPIO_WritePort	1
-../Drivers/Src/stm32f4xx_gpio_driver.c:142:6:DRV_GPIO_TogglePin	1
+../Drivers/Src/stm32f4xx_gpio_driver.c:120:10:DRV_GPIO_ReadPin	1
+../Drivers/Src/stm32f4xx_gpio_driver.c:136:10:DRV_GPIO_ReadPort	1
+../Drivers/Src/stm32f4xx_gpio_driver.c:154:6:DRV_GPIO_WritePin	3
+../Drivers/Src/stm32f4xx_gpio_driver.c:176:6:DRV_GPIO_WritePort	1
+../Drivers/Src/stm32f4xx_gpio_driver.c:191:6:DRV_GPIO_TogglePin	1
