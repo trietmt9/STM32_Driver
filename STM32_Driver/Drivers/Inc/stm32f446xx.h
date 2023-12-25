@@ -12,6 +12,39 @@
 //define volatile type for each peripheral register 
 
 #define __IO                                volatile  // read/write type
+
+/****************************** Processor Specific Details ******************************/
+/*
+ * ARM cortex M4 Processor NVIC ISERx register address
+ */
+
+#define NVIC_ISER_0                              ((__IO uint32_t*)0xE000E100)
+#define NVIC_ISER_1                              ((__IO uint32_t*)0xE000E104)
+#define NVIC_ISER_2                              ((__IO uint32_t*)0xE000E108)
+#define NVIC_ISER_3                              ((__IO uint32_t*)0xE000E10C)
+#define NVIC_ISER_4                              ((__IO uint32_t*)0xE000E110)
+#define NVIC_ISER_5                              ((__IO uint32_t*)0xE000E114)
+#define NVIC_ISER_6                              ((__IO uint32_t*)0xE000E118)
+#define NVIC_ISER_7                              ((__IO uint32_t*)0xE000E11C)
+
+/*
+ * ARM cortex M4 Processor NVIC ICERx register address
+ */
+
+#define NVIC_ICER_0                         ((__IO uint32_t*)0XE000E180)
+#define NVIC_ICER_1                         ((__IO uint32_t*)0xE000E184)
+#define NVIC_ICER_2                         ((__IO uint32_t*)0xE000E188)
+#define NVIC_ICER_3                         ((__IO uint32_t*)0xE000E18C)
+#define NVIC_ICER_4                         ((__IO uint32_t*)0xE000E190)
+#define NVIC_ICER_5                         ((__IO uint32_t*)0xE000E194)
+#define NVIC_ICER_6                         ((__IO uint32_t*)0xE000E198)
+#define NVIC_ICER_7                         ((__IO uint32_t*)0xE000E19C)
+
+/*
+ * ARM cortex M4 Processor Priority register address
+ */
+#define NVIC_PR_BASE                        ((__IO uint32_t*)0xE000E400)
+#define NUM_PR_BITS_IMPLEMENTED             4    
 /*
  * Macros for Base address of SRAM and FLASH memories of MCU
  * User can check Table 3. Memory mapping vs. Boot mode/physical in Reference Manual 
@@ -112,34 +145,56 @@ typedef struct
     __IO uint32_t AHB1RSTR;        //* AHB1 bus reset register                      offset: 0x10
     __IO uint32_t AHB2RSTR;        //* AHB2 bus reset register                      offset: 0x14
     __IO uint32_t AHB3RSTR;        //* AHB3 bus reset register                      offset: 0x18
-    uint32_t Reserved0;             //* Reserved bit                                 offset: 0x1C
+    uint32_t Reserved0;             //* Reserved bit                                offset: 0x1C
     __IO uint32_t APB1RSTR;        //* APB1 bus reset register                      offset: 0x20
     __IO uint32_t APB2RSTR;        //* APB2 bus reset register                      offset: 0x24
-    uint32_t Reserved1[2];          //* Reserved bit                                 offset: 0x28 - 0x2C
+    uint32_t Reserved1[2];          //* Reserved bit                                offset: 0x28 - 0x2C
     __IO uint32_t AHB1ENR;         //* AHB1 bus enable register                     offset: 0x30
     __IO uint32_t AHB2ENR;         //* AHB2 bus enable register                     offset: 0x34
     __IO uint32_t AHB3ENR;         //* AHB3 bus enable register                     offset: 0x38
-    uint32_t Reserved2;             //* Reserved bit                                 offset: 0x3C
+    uint32_t Reserved2;             //* Reserved bit                                offset: 0x3C
     __IO uint32_t APB1ENR;         //* APB1 bus enable register                     offset: 0x40
     __IO uint32_t APB2ENR;         //* APB2 bus enable register                     offset: 0x44
-    uint32_t Reserved3[2];          //* Reserved bit                                 offset: 0x48 - 0x4C
+    uint32_t Reserved3[2];          //* Reserved bit                                offset: 0x48 - 0x4C
     __IO uint32_t AHB1LPENR;       //* AHB1 bus low power mode register             offset: 0x50
     __IO uint32_t AHB2LPENR;       //* AHB2 bus low power mode register             offset: 0x54
     __IO uint32_t AHB3LPENR;       //* AHB3 bus low power mode register             offset: 0x58
-    uint32_t Reserved4;             //* Reserved bit                                 offset: 0x5C
+    uint32_t Reserved4;             //* Reserved bit                                offset: 0x5C
     __IO uint32_t APB1LPENR;       //* APB1 bus low power mode register             offset: 0x60
     __IO uint32_t APB2LPENR;       //* APB2 bus low power mode register             offset: 0x64
-    uint32_t Reserved5[2];          //* Reserved bit                                 offset: 0x68 - 0x6C
+    uint32_t Reserved5[2];          //* Reserved bit                                offset: 0x68 - 0x6C
     __IO uint32_t BDCR;            //* Backup domain control register               offset: 0x70
     __IO uint32_t CSR;             //* Clock control and status register            offset: 0x74
-    uint32_t Reserved6[2];          //* Reserved bit                                 offset: 0x78 - 0x7C
+    uint32_t Reserved6[2];          //* Reserved bit                                offset: 0x78 - 0x7C
     __IO uint32_t SSCGR;           //* Spread spectrum clock generation register    offset: 0x80
     __IO uint32_t PLLI2SCFGR;      //* PLLI2S configuration register                offset: 0x84
     __IO uint32_t PLLSAICFGR;      //* PLL configuration register                   offset: 0x88
     __IO uint32_t DCKCFGR;         //* Dedicated clock configuration register       offset: 0x8C
     __IO uint32_t CKGATENR;        //* Clocks gated enable register                 offset: 0x90
     __IO uint32_t DCKCFGR2;        //* Dedicated clock configuration register 2     offset: 0x94
-}RCC_TypeDef_t;
+}RCC_TypeDef_t;  
+
+/**EXTI configuration definition structure**/
+typedef struct
+{
+    __IO uint32_t IMR;             //* Interrupts mask register                     offset: 0x00                           
+    __IO uint32_t EMR;             //* Event mask register                          offset: 0x04 
+    __IO uint32_t RTSR;            //* Rising trigger selection register            offset: 0x08
+    __IO uint32_t FTSR;            //* Falling trigger selection register           offset: 0x0C
+    __IO uint32_t SWIER;           //* Software interrupts event selection register offset: 0x10
+    __IO uint32_t PR;              //* Pending register                             offset: 0x14
+}EXTI_TypeDef_t;
+
+typedef struct 
+{
+    __IO uint32_t MEMRMP;          //* Memory map                                   offset: 0x00
+    __IO uint32_t PMC;             //* Peripheral mode register                     offset: 0x04
+    __IO uint32_t EXTICR[4];       //* External interrupt configuration register    offset: 0x08 - 0x14
+    uint32_t Reserved0[2];         //* Reserved bit                                 offset: 0x18 - 0x1C
+    __IO uint32_t CMPCR;           //* Compensation cell control register           offset: 0x20
+    uint32_t Reserved1[2];         //* Reserved bit                                 offset: 0x24 - 0x28
+    __IO uint32_t CFGR;            //* Configure register                           offset: 0x2C
+}SYSCFG_TypeDef_t;
 
 typedef enum 
 {
@@ -165,6 +220,8 @@ typedef enum
 #define GPIOG                               ((GPIO_TypeDef_t*)GPIOG_BASE)
 #define GPIOH                               ((GPIO_TypeDef_t*)GPIOH_BASE)
 #define RCC                                 ((RCC_TypeDef_t*)RCC_BASE)
+#define EXTI                                ((EXTI_TypeDef_t*)EXTI_BASE)
+#define SYSCFG                              ((SYSCFG_TypeDef_t*)SYSCFG_BASE)
 
 
 /*
@@ -204,6 +261,10 @@ typedef enum
 #define UART5_PCLK_EN()                     (RCC->APB1ENR |= (1<<20))
 #define USART6_PCLK_EN()                    (RCC->APB2ENR |= (1<<5))   
 
+/*
+ * Enable SYSCFG peripherals clock macros 
+ */
+#define SYSCFG_PCLK_EN()                    (RCC->APB2ENR |= (1<<14))
 
 /*
  * Disable GPIOx peripherals clock macros 
@@ -229,4 +290,13 @@ typedef enum
 #define GPIOG_REG_RESET()                     do{ (RCC->AHB1RSTR |=(1<<6)); (RCC->AHB1RSTR &= ~(1<<6)); }while(0)
 #define GPIOH_REG_RESET()                     do{ (RCC->AHB1RSTR |=(1<<7)); (RCC->AHB1RSTR &= ~(1<<7)); }while(0)
 
+
+#define GPIO_BASE_TO_CODE(x)                    ((x == GPIOA)? 0:\
+                                                (x == GPIOB) ? 1:\
+                                                (x == GPIOC) ? 2:\
+                                                (x == GPIOD) ? 3:\
+                                                (x == GPIOE) ? 4:\
+                                                (x == GPIOF) ? 5:\
+                                                (x == GPIOG) ? 6:\
+                                                (x == GPIOH) ? 7:0)
 #endif /* INC_STM32F4XX_H_ */

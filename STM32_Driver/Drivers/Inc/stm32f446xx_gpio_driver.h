@@ -60,6 +60,15 @@ typedef enum
     
 }GPIO_PUPD;
 
+// Definition macros of EXTI numbers
+#define IRQ_NO_EXTI0                       6
+#define IRQ_NO_EXTI1                       7
+#define IRQ_NO_EXTI2                       8
+#define IRQ_NO_EXTI3                       9
+#define IRQ_NO_EXTI4                       10
+#define IRQ_NO_EXTI9_5                     23
+#define IRQ_NO_EXTI15_10                   40
+
 
 /* Define GPIO pin number */
 
@@ -105,7 +114,8 @@ void DRV_GPIO_TogglePin(GPIO_TypeDef_t* pGPIOx, uint8_t PinNumber );
 /*
  * IRQ configure and ISR handling
  */
-void DRV_GPIO_IRQConfig(uint8_t IRQNumber,uint8_t IRQPriority, EnOrDi_State EnOrDi);
-void DRV_GPIO_IRQHandling(void);
+void DRV_GPIO_IRQConfig(uint8_t IRQNumber, EnOrDi_State EnOrDi);
+void DRV_GPIO_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority);
+void DRV_GPIO_IRQHandling(uint8_t PinNumber);
 
 #endif /* INC_STM32F4XX_GPIO_DRIVER_H_ */

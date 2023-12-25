@@ -1,10 +1,10 @@
-01:19:05 **** Incremental Build of configuration Debug for project STM32_Driver ****
+16:04:33 **** Incremental Build of configuration Debug for project STM32_Driver ****
 make -j16 all 
 arm-none-eabi-size  STM32_Driver.elf 
    text	   data	    bss	    dec	    hex	filename
-   1600	      8	   1568	   3176	    c68	STM32_Driver.elf
+   2488	      8	   1568	   4064	    fe0	STM32_Driver.elf
 Finished building: default.size.stdout
  
 
-01:19:05 Build Finished. 0 errors, 0 warnings. (took 145ms)
+16:04:33 Build Finished. 0 errors, 0 warnings. (took 137ms)
 

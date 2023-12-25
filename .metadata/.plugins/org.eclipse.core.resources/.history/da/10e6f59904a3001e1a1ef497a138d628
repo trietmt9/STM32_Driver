@@ -313,7 +313,7 @@ void DRV_GPIO_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority)
 void DRV_GPIO_IRQHandling(uint8_t PinNumber)
 {
     // Clear the EXTI PR register corresponding to pin number 
-    if(EXTI->PR & (1 << PinNumber))
+    if(EXTI->PR & (1 << PinNumber));
     {
         // clear 
         EXTI->PR |= (1<<PinNumber);

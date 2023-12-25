@@ -1,0 +1,11 @@
+../Drivers/Src/stm32f446xx_gpio_driver.c:20:6:DRV_GPIO_Pclkcontrol	18
+../Drivers/Src/stm32f446xx_gpio_driver.c:57:6:DRV_GPIO_Init	14
+../Drivers/Src/stm32f446xx_gpio_driver.c:141:6:DRV_GPIO_DeInit	9
+../Drivers/Src/stm32f446xx_gpio_driver.c:163:10:DRV_GPIO_ReadPin	1
+../Drivers/Src/stm32f446xx_gpio_driver.c:179:10:DRV_GPIO_ReadPort	1
+../Drivers/Src/stm32f446xx_gpio_driver.c:197:6:DRV_GPIO_WritePin	3
+../Drivers/Src/stm32f446xx_gpio_driver.c:219:6:DRV_GPIO_WritePort	1
+../Drivers/Src/stm32f446xx_gpio_driver.c:234:6:DRV_GPIO_TogglePin	1
+../Drivers/Src/stm32f446xx_gpio_driver.c:249:6:DRV_GPIO_IRQConfig	12
+../Drivers/Src/stm32f446xx_gpio_driver.c:295:6:DRV_GPIO_IRQPriorityCFG	1
+../Drivers/Src/stm32f446xx_gpio_driver.c:313:6:DRV_GPIO_IRQHandling	2
