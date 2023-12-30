@@ -120,7 +120,7 @@
  * Check device's reference manual and define a struct in order 
  */
 
-/**GPIO configuration definition structure**/
+/** GPIO configuration definition structure**/
 typedef struct
 {
     __IO uint32_t MODER;            //* Mode register                                offset: 0x00
@@ -135,7 +135,7 @@ typedef struct
 
 }GPIO_TypeDef_t;
 
-/**RCC configuration definition structure**/
+/** RCC configuration definition structure**/
 typedef struct 
 {
     __IO uint32_t CR;              //* Control register                             offset: 0x00
@@ -174,7 +174,7 @@ typedef struct
     __IO uint32_t DCKCFGR2;        //* Dedicated clock configuration register 2     offset: 0x94
 }RCC_TypeDef_t;  
 
-/**EXTI configuration definition structure**/
+/** EXTI configuration definition structure**/
 typedef struct
 {
     __IO uint32_t IMR;             //* Interrupts mask register                     offset: 0x00                           
@@ -185,6 +185,7 @@ typedef struct
     __IO uint32_t PR;              //* Pending register                             offset: 0x14
 }EXTI_TypeDef_t;
 
+/** SYSCFG configuration definition structure**/
 typedef struct 
 {
     __IO uint32_t MEMRMP;          //* Memory map                                   offset: 0x00
@@ -195,6 +196,20 @@ typedef struct
     uint32_t Reserved1[2];         //* Reserved bit                                 offset: 0x24 - 0x28
     __IO uint32_t CFGR;            //* Configure register                           offset: 0x2C
 }SYSCFG_TypeDef_t;
+
+/** SPI configuration definition structure**/
+typedef struct
+{
+    __IO uint32_t CR1;              //* Control register1                            offset: 0x00
+    __IO uint32_t CR2;              //* Control register2                            offset: 0x04
+    __IO uint32_t SR;               //* Status register                              offset: 0x08
+    __IO uint32_t DR;               //* Data register                                offset: 0x0C
+    __IO uint32_t CRCPR;            //* CRC polynomial register                      offset: 0x10
+    __IO uint32_t RXCRCR;           //* RX CRC register                              offset: 0x14
+    __IO uint32_t TXCRCR;           //* TX CRC register                              offset: 0x18
+    __IO uint32_t I2SCFGR;          //* I2S configuration register                   offset: 0x1C
+    __IO uint32_t I2SPR;            //* I2S prescaler register                       offset: 0x20
+}SPI_TypeDef_t;
 
 typedef enum 
 {
@@ -210,7 +225,7 @@ typedef enum
 /*
  * Peripheral definitions 
  */
-
+// GPIO peripheral define 
 #define GPIOA                               ((GPIO_TypeDef_t*)GPIOA_BASE)
 #define GPIOB                               ((GPIO_TypeDef_t*)GPIOB_BASE)
 #define GPIOC                               ((GPIO_TypeDef_t*)GPIOC_BASE)
@@ -219,10 +234,19 @@ typedef enum
 #define GPIOF                               ((GPIO_TypeDef_t*)GPIOF_BASE)
 #define GPIOG                               ((GPIO_TypeDef_t*)GPIOG_BASE)
 #define GPIOH                               ((GPIO_TypeDef_t*)GPIOH_BASE)
+
+// Register clock control define  
 #define RCC                                 ((RCC_TypeDef_t*)RCC_BASE)
+
+// External and System configure interrupt define 
 #define EXTI                                ((EXTI_TypeDef_t*)EXTI_BASE)
 #define SYSCFG                              ((SYSCFG_TypeDef_t*)SYSCFG_BASE)
 
+// SPI peripheral define 
+#define SPI1                                ((SPI_TypeDef_t*)SPI1_BASE)
+#define SPI2                                ((SPI_TypeDef_t*)SPI2_BASE)
+#define SPI3                                ((SPI_TypeDef_t*)SPI3_BASE)
+#define SPI4                                ((SPI_TypeDef_t*)SPI4_BASE)
 
 /*
  * Enable GPIOx peripherals clock macros 
@@ -279,6 +303,15 @@ typedef enum
 #define GPIOH_PCLK_DI()                     (RCC->AHB1ENR &=~ (1<<7))
 
 /*
+ * Enable SPIx peripherals clock macros 
+ */
+#define SPI1_PCLK_DI()                      (RCC->APB2ENR &=~ (1<<12))
+#define SPI2_PCLK_DI()                      (RCC->APB1ENR &=~ (1<<14))
+#define SPI3_PCLK_DI()                      (RCC->APB1ENR &=~ (1<<15))
+#define SPI4_PCLK_DI()                      (RCC->APB2ENR &=~ (1<<13))
+
+
+/*
  * Reset register GPIOx peripherals clock macros 
  */
 #define GPIOA_REG_RESET()                     do{ (RCC->AHB1RSTR |=(1<<0)); (RCC->AHB1RSTR &= ~(1<<0)); }while(0)
@@ -290,6 +323,13 @@ typedef enum
 #define GPIOG_REG_RESET()                     do{ (RCC->AHB1RSTR |=(1<<6)); (RCC->AHB1RSTR &= ~(1<<6)); }while(0)
 #define GPIOH_REG_RESET()                     do{ (RCC->AHB1RSTR |=(1<<7)); (RCC->AHB1RSTR &= ~(1<<7)); }while(0)
 
+/*
+ * Reset register SPIx peripherals clock macros 
+ */
+#define SPI1_REG_RESET()                      do{ (RCC->AHB2RSTR |=(1<<12)); (RCC->AHB2RSTR &= ~(1<<12)); }while(0)
+#define SPI2_REG_RESET()                      do{ (RCC->AHB1RSTR |=(1<<14)); (RCC->AHB1RSTR &= ~(1<<14)); }while(0)
+#define SPI3_REG_RESET()                      do{ (RCC->AHB1RSTR |=(1<<15)); (RCC->AHB1RSTR &= ~(1<<15)); }while(0)
+#define SPI4_REG_RESET()                      do{ (RCC->AHB2RSTR |=(1<<13)); (RCC->AHB2RSTR &= ~(1<<13)); }while(0)
 
 #define GPIO_BASE_TO_CODE(x)                    ((x == GPIOA)? 0:\
                                                 (x == GPIOB) ? 1:\

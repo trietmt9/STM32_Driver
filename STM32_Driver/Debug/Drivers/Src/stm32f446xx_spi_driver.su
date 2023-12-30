@@ -1,0 +1,7 @@
+../Drivers/Src/stm32f446xx_spi_driver.c:20:6:DRV_SPI_Pclkcontrol	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:49:6:DRV_SPI_Init	24	static
+../Drivers/Src/stm32f446xx_spi_driver.c:98:6:DRV_SPI_PeripheralControl	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:110:6:DRV_SPI_SSI	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:130:6:DRV_SPI_DeInit	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:148:9:SPI_FlagStatus	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:169:6:DRV_SPI_Tx	24	static

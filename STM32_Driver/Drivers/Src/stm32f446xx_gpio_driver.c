@@ -57,6 +57,9 @@ void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi)
 void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig)
 {
     uint32_t temp; 
+
+    // Enable peripheral clock 
+    DRV_GPIO_Pclkcontrol(pGPIOx, ENABLE);
     // 1. Configure mode 
     if(pGPIOPinCofig->PinMode <= GPIO_ANALOG)
     {
@@ -118,7 +121,7 @@ void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig)
     temp = 0;
 
     // 5. Configure alternative function
-    if(pGPIOPinCofig->PinAltFunction == GPIO_ALTERNATE)
+    if(pGPIOPinCofig->PinMode == GPIO_ALTERNATE)
     {
         uint32_t temp1, temp2;
         temp1 = pGPIOPinCofig->PinNumber/8;

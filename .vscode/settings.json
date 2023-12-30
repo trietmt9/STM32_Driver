@@ -7,7 +7,8 @@
         "core_cm4.h": "c",
         "stdint.h": "c",
         "stm32f446xx_gpio_driver.h": "c",
-        "stm32f4xx_gpio_driver.h": "c"
+        "stm32f4xx_gpio_driver.h": "c",
+        "stm32f446xx_spi_driver.h": "c"
     },
     "C_Cpp.dimInactiveRegions": false
 }
