@@ -39,9 +39,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  00001f14  00000000  00000000  0001240d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000176c  00000000  00000000  00014321  2**0
+ 18 .debug_line   0000176d  00000000  00000000  00014321  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    00008d1e  00000000  00000000  00015a8d  2**0
+ 19 .debug_str    00008d1e  00000000  00000000  00015a8e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  20 .debug_frame  0000038c  00000000  00000000  0001e7ac  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -1170,18 +1170,18 @@ void DRV_SPI_Tx(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
  80008fc:	461a      	mov	r2, r3
  80008fe:	68fb      	ldr	r3, [r7, #12]
  8000900:	60da      	str	r2, [r3, #12]
-            Buffer_Size--;
- 8000902:	687b      	ldr	r3, [r7, #4]
- 8000904:	3b01      	subs	r3, #1
- 8000906:	607b      	str	r3, [r7, #4]
+            (uint16_t*) pTx_Buffer++;
+ 8000902:	68bb      	ldr	r3, [r7, #8]
+ 8000904:	3301      	adds	r3, #1
+ 8000906:	60bb      	str	r3, [r7, #8]
             Buffer_Size--;
  8000908:	687b      	ldr	r3, [r7, #4]
  800090a:	3b01      	subs	r3, #1
  800090c:	607b      	str	r3, [r7, #4]
-            (uint16_t*) pTx_Buffer++;
- 800090e:	68bb      	ldr	r3, [r7, #8]
- 8000910:	3301      	adds	r3, #1
- 8000912:	60bb      	str	r3, [r7, #8]
+            Buffer_Size--;       
+ 800090e:	687b      	ldr	r3, [r7, #4]
+ 8000910:	3b01      	subs	r3, #1
+ 8000912:	607b      	str	r3, [r7, #4]
  8000914:	e00a      	b.n	800092c <DRV_SPI_Tx+0x5e>
         }
         else 
@@ -1245,7 +1245,7 @@ int main(void)
  800095c:	2101      	movs	r1, #1
  800095e:	4808      	ldr	r0, [pc, #32]	; (8000980 <main+0x44>)
  8000960:	f7ff ff69 	bl	8000836 <DRV_SPI_PeripheralControl>
-    DRV_SPI_Tx(SPI1,(uint8_t*) buffer, strlen(buffer));
+    while(1){DRV_SPI_Tx(SPI1,(uint8_t*) buffer, strlen(buffer));}
  8000964:	463b      	mov	r3, r7
  8000966:	4618      	mov	r0, r3
  8000968:	f7ff fc4c 	bl	8000204 <strlen>
@@ -1254,8 +1254,7 @@ int main(void)
  8000970:	4619      	mov	r1, r3
  8000972:	4803      	ldr	r0, [pc, #12]	; (8000980 <main+0x44>)
  8000974:	f7ff ffab 	bl	80008ce <DRV_SPI_Tx>
-    while(1){}
- 8000978:	e7fe      	b.n	8000978 <main+0x3c>
+ 8000978:	e7f4      	b.n	8000964 <main+0x28>
  800097a:	bf00      	nop
  800097c:	08000adc 	.word	0x08000adc
  8000980:	40013000 	.word	0x40013000

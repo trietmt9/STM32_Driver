@@ -179,9 +179,9 @@ void DRV_SPI_Tx(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
             // 16 bits DFF 
             // 1.1 Load data to DR register 
             hspix->DR = *((uint16_t*) pTx_Buffer);
-            Buffer_Size--;
-            Buffer_Size--;
             (uint16_t*) pTx_Buffer++;
+            Buffer_Size--;
+            Buffer_Size--;       
         }
         else 
         {

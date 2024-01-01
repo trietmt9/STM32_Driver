@@ -29,7 +29,8 @@ int main(void)
 
     DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high
     DRV_SPI_PeripheralControl(SPI1, ENABLE);
-    while(1){DRV_SPI_Tx(SPI1,(uint8_t*) buffer, strlen(buffer));}
+    DRV_SPI_Tx(SPI1,(uint8_t*) buffer, strlen(buffer));
+    while(1){}
 	return 0;
 }
 void SPI_INIT(void)
