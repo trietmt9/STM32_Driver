@@ -42,7 +42,7 @@ typedef enum
 typedef enum
 {
     FullDuplex = 0,
-    HalfDuplex,
+    HalfDuplex    ,
     Simplex_Rx
 }BusConfig;
 
@@ -50,12 +50,12 @@ typedef enum
 typedef enum
 {
     DIV_2 = 0,
-    DIV_4,
-    DIV8,
-    DIV_16,
-    DIV_32,
-    DIV_64,
-    DIV_128,
+    DIV_4    ,
+    DIV8     ,
+    DIV_16   ,
+    DIV_32   ,
+    DIV_64   ,
+    DIV_128  ,
     DIV_256
 }ClockSpeed;
 
@@ -101,13 +101,15 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
  */
 void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix);
 void DRV_SPI_DeInit(SPI_TypeDef_t* pSPIx);
-void DRV_SPI_PeripheralControl(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
+void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
+
 /*
  * Send and Receive 
  */
-void DRV_SPI_Tx(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size);
-void DRV_SPI_Rx(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
+void DRV_SPI_Transmit(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size);
+void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
+
 /*
  * IQR and ISR 
  */

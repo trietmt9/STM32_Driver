@@ -95,7 +95,7 @@ void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix)
     pSPIx->CR1 = tempreg;
 }
 
-void DRV_SPI_PeripheralControl(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
+void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
 {
     if(EnOrDi == ENABLE)
     {
@@ -155,7 +155,7 @@ uint8_t SPI_FlagStatus(SPI_TypeDef_t* hspix, uint32_t Flag)
 }
 
 /*******************************************************
- * @fn                     - DRV_SPI_Tx
+ * @fn                     - DRV_SPI_Transmit
  * 
  * @brief                  - SPI transmit data  
  * 
@@ -166,7 +166,7 @@ uint8_t SPI_FlagStatus(SPI_TypeDef_t* hspix, uint32_t Flag)
  * @return                 - void
  * @note                   - This function is in blocking mode
 ********************************************************/
-void DRV_SPI_Tx(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
+void DRV_SPI_Transmit(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
 {
     while(Buffer_Size > 0)
     {
@@ -190,6 +190,46 @@ void DRV_SPI_Tx(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
             hspix->DR = *pTx_Buffer;
             Buffer_Size--;
             pTx_Buffer++;
+        }
+    }
+}
+
+/*******************************************************
+ * @fn                     - DRV_SPI_Receive
+ * 
+ * @brief                  - SPI receive data  
+ * 
+ * @param                  - pSPIx: SPI peripheral of the MCU
+ * @param                  - pTx_Buffer: Received buffer
+ * @param                  - Buffer_size: Size of buffer
+ * 
+ * @return                 - void
+ * @note                   - This function is in blocking mode
+********************************************************/
+void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size)
+{
+    while(Buffer_Size > 0)
+    {
+        // 1. Wait TXE is set
+        while(SPI_FlagStatus(hspix, SPI_RXNE_FLAG) == FLAG_RESET);
+
+        // 2. Check DFF bit in CR1 
+        if(hspix->CR1 & (1 << 11))
+        {
+            // 16 bits DFF 
+            // 1.1 Load data to Rx buffer address  
+            *((uint16_t*) pRx_Buffer) = hspix->DR;
+            (uint16_t*) pRx_Buffer++;
+            Buffer_Size--;
+            Buffer_Size--;       
+        }
+        else 
+        {
+            // 8 bits DFF
+            // 1.1 Load data to DR register 
+            *(pRx_Buffer) = hspix->DR;
+            Buffer_Size--;
+            pRx_Buffer++;
         }
     }
 }
