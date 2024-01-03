@@ -11,6 +11,6 @@
 - It contain APIs: GPIO_Write_Pin, GPIO_Read_Pin, GPIO_Write_Port, GPIO_Read_Port, GPIO_IQR <br/>
 
 ### SPI driver 
-![GPIO](Images/SPI.png)
+![SPI](Images/SPI.png)
 - SPI driver is use for controlling SPI peripheral in the STM32F446xx series 
 - It contain APIs: DRV_SPI_Transmit, DRV_SPI_Receive, DRV_SPI_Transmit_IT, DRV_SPI_Receive_IT, DRV_SPI_Transmit_DMA, DRV_SPI_Receive_IT <br/>
