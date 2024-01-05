@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=MCU/PA0/Analog_IN0 Pin=Analog 1/2/3 Input-1
+Removed Pin From Net: NetName=MCU/PA1/Analog_IN1 Pin=Analog 1/2/3 Input-2
+Removed Pin From Net: NetName=MCU/PA2/Analog_IN2 Pin=Analog 1/2/3 Input-3
+Removed Pin From Net: NetName=IMU_INT Pin=Analog 1/2/3 Input-4
+Removed Pin From Net: NetName=IMU_CS Pin=Analog 1/2/3 Input-5
+Removed Pin From Net: NetName=MCU/PA5/Analog_IN5/TIM2_CH1 Pin=Analog 1/2/3 Input-6
+Removed Pin From Net: NetName=MCU/PA6/Analog_IN6/TIM3_CH1 Pin=Analog 1/2/3 Input-7
+Removed Pin From Net: NetName=MCU/PA7/Analog_IN7/TIM3_CH2 Pin=Analog 1/2/3 Input-8
+Removed Pin From Net: NetName=MCU/PC5/Analog_IN15 Pin=Analog 1/2/3 Input-9
+Removed Pin From Net: NetName=MCU/PC4/Analog_IN14 Pin=Analog 1/2/3 Input-10
+Removed Pin From Net: NetName=MCU/PC3/Analog_IN13 Pin=Analog 1/2/3 Input-11
+Removed Pin From Net: NetName=MCU/PC2/Analog_IN12 Pin=Analog 1/2/3 Input-12
+Removed Pin From Net: NetName=MCU/PC1/Analog_IN11 Pin=Analog 1/2/3 Input-13
+Removed Pin From Net: NetName=MCU/PC0/Analog_IN10 Pin=Analog 1/2/3 Input-14
+Removed Pin From Net: NetName=MCU/PB1/Analog_IN9/TIM3_CH4 Pin=Analog 1/2/3 Input-15
+Removed Pin From Net: NetName=MCU/PB0/Analog_IN8/TIM3_CH3 Pin=Analog 1/2/3 Input-16
+Removed Member From Class: ClassName=STM32F446xx Schematic design Member=Analog 1/2/3 Input
