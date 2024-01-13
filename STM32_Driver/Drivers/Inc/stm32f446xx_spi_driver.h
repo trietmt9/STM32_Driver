@@ -103,6 +103,7 @@ void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix);
 void DRV_SPI_DeInit(SPI_TypeDef_t* pSPIx);
 void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
+void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 
 /*
  * Send and Receive 
