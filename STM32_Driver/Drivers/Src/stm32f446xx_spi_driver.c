@@ -107,6 +107,16 @@ void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
     }
 }
 
+/*******************************************************
+ * @fn                     - DRV_SPI_SSI
+ * 
+ * @brief                  - Enable or Disable SSI register
+ * 
+ * @param                  - pSPIx: SPI peripheral of the MCU
+ * @param                  - EnOrDi: Enable or Disable
+ * 
+ * @return                 - void
+********************************************************/
 void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
 {
     if(EnOrDi == ENABLE)
@@ -118,6 +128,29 @@ void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
         pSPIx->CR1 &=~ (1 << 8);
     }
 }
+
+/*******************************************************
+ * @fn                     - DRV_SPI_SSOE
+ * 
+ * @brief                  - Enable or Disable SSOE register
+ * 
+ * @param                  - pSPIx: SPI peripheral of the MCU
+ * @param                  - EnOrDi: Enable or Disable
+ * 
+ * @return                 - void
+********************************************************/
+void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
+{
+    if(EnOrDi == ENABLE)
+    {
+        pSPIx->CR2 |= (1 << 2);
+    }
+    else 
+    {
+        pSPIx->CR2 &=~ (1 << 2);
+    }
+}
+
 /*******************************************************
  * @fn                     - DRV_SPI_DeInit
  * 
