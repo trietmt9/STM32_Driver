@@ -1,0 +1,28 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Project [PCB_Project.PrjPcb]
+   Generated File[STM32F446xx PCB Design_Copper_Signal_Top.gbr]
+   Generated File[STM32F446xx PCB Design_Copper_Signal_1.gbr]
+   Generated File[STM32F446xx PCB Design_Copper_Signal_2.gbr]
+   Generated File[STM32F446xx PCB Design_Copper_Signal_Bot.gbr]
+   Generated File[STM32F446xx PCB Design_Pads_Bot.gbr]
+   Generated File[STM32F446xx PCB Design_Pads_Top.gbr]
+   Generated File[STM32F446xx PCB Design_Legend_Bot.gbr]
+   Generated File[STM32F446xx PCB Design_Soldermask_Bot.gbr]
+   Generated File[STM32F446xx PCB Design_Paste_Bot.gbr]
+   Generated File[STM32F446xx PCB Design_Legend_Top.gbr]
+   Generated File[STM32F446xx PCB Design_Paste_Top.gbr]
+   Generated File[STM32F446xx PCB Design_Soldermask_Top.gbr]
+   Generated File[STM32F446xx PCB Design_Keep-out.gbr]
+   Generated File[STM32F446xx PCB Design_Profile.gbr]
+   Generated File[STM32F446xx PCB Design_NPTH_Drill.gbr]
+   Generated File[STM32F446xx PCB Design_PTH_Drill.gbr]
+   Generated File[STM32F446xx PCB Design.RUL]
+   Generated File[STM32F446xx PCB Design.EXTREP]
+   Generated File[STM32F446xx PCB Design.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 3:13:12 PM On 1/23/2024

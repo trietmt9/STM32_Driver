@@ -1,7 +1,9 @@
 ../Drivers/Src/stm32f446xx_spi_driver.c:20:6:DRV_SPI_Pclkcontrol	16	static
 ../Drivers/Src/stm32f446xx_spi_driver.c:49:6:DRV_SPI_Init	24	static
-../Drivers/Src/stm32f446xx_spi_driver.c:98:6:DRV_SPI_PeripheralControl	16	static
-../Drivers/Src/stm32f446xx_spi_driver.c:110:6:DRV_SPI_SSI	16	static
-../Drivers/Src/stm32f446xx_spi_driver.c:130:6:DRV_SPI_DeInit	16	static
-../Drivers/Src/stm32f446xx_spi_driver.c:148:9:SPI_FlagStatus	16	static
-../Drivers/Src/stm32f446xx_spi_driver.c:169:6:DRV_SPI_Tx	24	static
+../Drivers/Src/stm32f446xx_spi_driver.c:98:6:DRV_SPI_PeripheralEnable	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:120:6:DRV_SPI_SSI	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:142:6:DRV_SPI_SSOE	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:163:6:DRV_SPI_DeInit	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:181:9:SPI_FlagStatus	16	static
+../Drivers/Src/stm32f446xx_spi_driver.c:202:6:DRV_SPI_Transmit	24	static
+../Drivers/Src/stm32f446xx_spi_driver.c:242:6:DRV_SPI_Receive	24	static

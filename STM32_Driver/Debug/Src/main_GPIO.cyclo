@@ -1,0 +1,5 @@
+../Src/main_GPIO.c:12:6:delay	2
+../Src/main_GPIO.c:18:5:main	5
+../Src/main_GPIO.c:42:6:GPIO_Init	1
+../Src/main_GPIO.c:62:6:IRQ_INIT	1
+../Src/main_GPIO.c:68:6:EXTI15_10_IRQHandler	1
