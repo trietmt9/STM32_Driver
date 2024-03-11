@@ -20,11 +20,14 @@
 
 void GPIO_INIT(void);
 void SPI_INIT(void);
-
+void delay(uint32_t timeout)
+{
+    for(uint32_t i = 0; i < (timeout*1000); i++);
+}
 int main(void)
 {
 
-	char buffer[]= "Hello World !";
+	char buffer[]= "Hello World!";
     GPIO_INIT();
     SPI_INIT();
     DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high
@@ -32,6 +35,8 @@ int main(void)
     while(1)
     {
         DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, strlen(buffer));
+        delay(1000);
+
     }
 	return 0;
 }

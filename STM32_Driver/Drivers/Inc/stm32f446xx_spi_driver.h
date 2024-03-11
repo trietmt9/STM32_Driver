@@ -32,22 +32,22 @@ typedef struct
 
 
 // SPI enumerated device mode
-typedef enum
+enum
 {
     SLAVE = 0,
     MASTER   
-}Device_Mode;
+};
 
 // SPI enumerated bus configuration
-typedef enum
+enum
 {
     FullDuplex = 0,
     HalfDuplex    ,
     Simplex_Rx
-}BusConfig;
+};
 
 // SPI enumerated Clock Speed
-typedef enum
+enum
 {
     DIV_2 = 0,
     DIV_4    ,
@@ -57,35 +57,35 @@ typedef enum
     DIV_64   ,
     DIV_128  ,
     DIV_256
-}ClockSpeed;
+};
 
 // SPI enumerated data frame format 
-typedef enum 
+enum 
 {
     DFF_8BITS = 0,
     DFF_16BITS
-}DFF;
+};
 
 // SPI enumerated Clock Polarity 
-typedef enum 
+enum 
 {
     CPOL_L = 0,
     CPOL_H
-}CPOL;
+};
 
 // SPI enumerated Clock Phase
-typedef enum 
+enum 
 {   
     CPHA_L = 0,
     CPHA_H
-}CPHA;
+};
 
 // SPI enumerated Slave Select Management
-typedef enum 
+enum 
 {   
     SSM_DI = 0,
     SSM_EN
-}SSM;   
+};   
 /*************************************************************************
  *                  APIs for controlling SPI driver
  *           Check function definition for more information

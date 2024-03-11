@@ -5,13 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/main_GPIO.c 
+../Src/main_SPI.c 
 
 OBJS += \
-./Src/main_GPIO.o 
+./Src/main_SPI.o 
 
 C_DEPS += \
-./Src/main_GPIO.d 
+./Src/main_SPI.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +21,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/main_GPIO.cyclo ./Src/main_GPIO.d ./Src/main_GPIO.o ./Src/main_GPIO.su
+	-$(RM) ./Src/main_SPI.cyclo ./Src/main_SPI.d ./Src/main_SPI.o ./Src/main_SPI.su
 
 .PHONY: clean-Src
 

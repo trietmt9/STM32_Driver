@@ -21,17 +21,17 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
 {
     if (EnOrDi == ENABLE)
     {
-        if(pSPIx == SPI1) SPI1_PCLK_EN();
-        else if(pSPIx == SPI2) SPI2_PCLK_EN();
-        else if(pSPIx == SPI3) SPI3_PCLK_EN();
-        else if(pSPIx == SPI4) SPI4_PCLK_EN();
+        if(pSPIx == SPI1)       SPI1_PCLK_EN();
+        else if(pSPIx == SPI2)  SPI2_PCLK_EN();
+        else if(pSPIx == SPI3)  SPI3_PCLK_EN();
+        else if(pSPIx == SPI4)  SPI4_PCLK_EN();
     }
     else
     {
-        if(pSPIx == SPI1) SPI1_PCLK_DI();
-        else if(pSPIx == SPI2) SPI2_PCLK_DI();
-        else if(pSPIx == SPI3) SPI3_PCLK_DI();
-        else if(pSPIx == SPI4) SPI4_PCLK_DI();
+        if(pSPIx == SPI1)       SPI1_PCLK_DI();
+        else if(pSPIx == SPI2)  SPI2_PCLK_DI();
+        else if(pSPIx == SPI3)  SPI3_PCLK_DI();
+        else if(pSPIx == SPI4)  SPI4_PCLK_DI();
     }
     
 }

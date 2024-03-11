@@ -154,7 +154,7 @@ typedef struct
     __IO uint32_t AHB3ENR;         //* AHB3 bus enable register                     offset: 0x38
     uint32_t Reserved2;             //* Reserved bit                                offset: 0x3C
     __IO uint32_t APB1ENR;         //* APB1 bus enable register                     offset: 0x40
-    __IO uint32_t APB2ENR;         //* APB2 bus enable register                     offset: 0x44
+    __IO uint32_t   APB2ENR;         //* APB2 bus enable register                     offset: 0x44
     uint32_t Reserved3[2];          //* Reserved bit                                offset: 0x48 - 0x4C
     __IO uint32_t AHB1LPENR;       //* AHB1 bus low power mode register             offset: 0x50
     __IO uint32_t AHB2LPENR;       //* AHB2 bus low power mode register             offset: 0x54
@@ -339,4 +339,8 @@ typedef enum
                                                 (x == GPIOF) ? 5:\
                                                 (x == GPIOG) ? 6:\
                                                 (x == GPIOH) ? 7:0)
+                
+#include <stm32f446xx_gpio_driver.h>
+#include <stm32f446xx_spi_driver.h>
+
 #endif /* INC_STM32F4XX_H_ */
