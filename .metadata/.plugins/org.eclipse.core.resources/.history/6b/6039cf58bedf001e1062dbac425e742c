@@ -27,7 +27,7 @@ void delay(uint32_t timeout)
 int main(void)
 {
 
-	char buffer[]= "Hello CGU";
+	char buffer[]= "Hello World!";
     GPIO_INIT();
     SPI_INIT();
     DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high

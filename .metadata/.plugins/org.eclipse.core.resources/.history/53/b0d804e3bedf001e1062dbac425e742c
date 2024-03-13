@@ -27,17 +27,12 @@ void delay(uint32_t timeout)
 int main(void)
 {
 
-	char buffer[]= "Hello CGU";
+	char buffer[]= "Hello World!";
     GPIO_INIT();
     SPI_INIT();
     DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high
     DRV_SPI_PeripheralEnable(SPI1, ENABLE);
-    while(1)
-    {
-        DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, strlen(buffer));
-        delay(1000);
-
-    }
+    DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, strlen(buffer));
 	return 0;
 }
 void SPI_INIT(void)

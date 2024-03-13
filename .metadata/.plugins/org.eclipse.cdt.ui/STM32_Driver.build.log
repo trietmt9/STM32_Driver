@@ -1,4 +1,4 @@
-23:17:54 **** Incremental Build of configuration Debug for project STM32_Driver ****
+23:51:37 **** Incremental Build of configuration Debug for project STM32_Driver ****
 make -j16 all 
 arm-none-eabi-gcc "../Src/main_SPI.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/pc/Documents/STM32_Driver/STM32_Driver/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main_SPI.d" -MT"Src/main_SPI.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main_SPI.o"
 arm-none-eabi-gcc -o "STM32_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\pc\Documents\STM32_Driver\STM32_Driver\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -15,11 +15,11 @@ Finished building target: STM32_Driver.elf
 arm-none-eabi-size  STM32_Driver.elf 
 arm-none-eabi-objdump -h -S STM32_Driver.elf  > "STM32_Driver.list"
    text	   data	    bss	    dec	    hex	filename
-   2804	      8	   1568	   4380	   111c	STM32_Driver.elf
+   2852	      8	   1568	   4428	   114c	STM32_Driver.elf
 Finished building: default.size.stdout
  
 Finished building: STM32_Driver.list
  
 
-23:17:54 Build Finished. 0 errors, 4 warnings. (took 407ms)
+23:51:38 Build Finished. 0 errors, 4 warnings. (took 464ms)
 
