@@ -13,6 +13,7 @@ void delay(uint32_t timeout)
 {
     for(uint32_t i = 0; i < (timeout*1000); i++);
 }
+
 void GPIO_Init(void);
 void IRQ_INIT(void);
 /**
@@ -22,60 +23,26 @@ void IRQ_INIT(void);
  */
 int main(void)
 {
-    /**
-     * @brief Initialize the GPIO
-     * @details This function initializes the GPIO pins used by the application.
-     */
     GPIO_Init();
-
-    /**
-     * @brief Initialize the interrupt
-     * @details This function initializes the interrupt used by the application.
-     */
     IRQ_INIT();
-
-    /**
-     * @brief Infinite loop
-     * @details This loop runs forever, switching between different modes of operation.
-     */
     while (1)
     {
-        /**
-         * @brief Switch between modes
-         * @details This switch statement allows the user to switch between different modes of operation.
-         */
         switch (mode)
         {
         case 0:
-            /**
-             * @brief Set the LED pin high
-             * @details This function sets the LED pin to high.
-             */
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_6, SET);
+            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
             break;
 
         case 1:
-            /**
-             * @brief Set the LED pin low
-             * @details This function sets the LED pin to low.
-             */
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_6, RESET);
+            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, RESET);
             break;
 
         case 2:
-            /**
-             * @brief Toggle the LED pin
-             * @details This function toggles the LED pin.
-             */
-            DRV_GPIO_TogglePin(GPIOA, 6);
+            DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
             delay(500);
             break;
 
         default:
-            /**
-             * @brief Reset the mode to zero
-             * @details This statement resets the mode variable to zero if it is greater than two.
-             */
             mode = 0;
             break;
         }
@@ -92,7 +59,7 @@ void GPIO_Init(void)
     GPIO_PinConfig_t GPIO_Struct = {0};
 
     // LED PA5
-    GPIO_Struct.PinNumber   = GPIO_PIN_6;
+    GPIO_Struct.PinNumber   = GPIO_PIN_5;
     GPIO_Struct.PinMode     = GPIO_OUTPUT;
     GPIO_Struct.PinSpeed    = FAST;
     GPIO_Struct.PinOPType   = PushPull;

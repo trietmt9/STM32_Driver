@@ -1,4 +1,0 @@
-../Src/main_SPI.c:23:6:delay	2
-../Src/main_SPI.c:27:5:main	1
-../Src/main_SPI.c:43:6:SPI_INIT	1
-../Src/main_SPI.c:56:6:GPIO_INIT	1

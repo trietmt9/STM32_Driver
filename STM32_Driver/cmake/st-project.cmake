@@ -69,9 +69,7 @@ target_link_options(
 
 target_sources(
     ${TARGET_NAME} PRIVATE
-    "Src\\main.c"
-    "Src\\syscalls.c"
-    "Src\\sysmem.c"
+    "Src\\main_GPIO.c"
     "Startup\\startup_stm32f446retx.s"
 )
 

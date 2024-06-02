@@ -1,0 +1,4 @@
+# ninja log v5
+3	319	7342609031787471	CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj	2832f37d5e7578df
+12	599	7342609034395453	CMakeFiles/STM32_Driver.dir/Src/main_SPI.c.obj	85d5fb52a6a5b76
+0	76	7342611233718895	CMakeFiles/STM32_Driver.dir/Src/main_GPIO.c.obj	33c47ac977160bea
