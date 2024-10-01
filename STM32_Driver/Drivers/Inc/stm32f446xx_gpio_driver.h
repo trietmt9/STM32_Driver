@@ -11,14 +11,18 @@
 
 typedef struct 
 {
-    uint8_t PinNumber;          //* Pin Number
-    uint8_t PinMode;            //* Pin Mode
-    uint8_t PinSpeed;           //* Pin output speed
+    uint8_t PinNumber;            //* Pin Number
+    uint8_t PinMode;               //* Pin Mode
+    uint8_t PinSpeed;              //* Pin output speed
     uint8_t PinPUPDCtrl;        //* Pin Pull up/down configuration
-    uint8_t PinOPType;          //* Pin output type
-    uint8_t PinAltFunction;     //* Pin alternative function 
+    uint8_t PinOPType;           //* Pin output type
+    uint8_t PinAltFunction;      //* Pin alternative function
 }GPIO_PinConfig_t;
-
+typedef struct 
+{
+    GPIO_TypeDef_t* pGPIOx;              //* Choose GPIOx 
+    GPIO_PinConfig_t GPIO_PinConfig;     //* GPIO Pin Configuration settings 
+}GPIO_HandleTypeDef;
 // Definition enumerated of GPIO mode
 typedef enum
 {
@@ -98,7 +102,7 @@ typedef enum
 /*
  * Peripheral clock setup
  */
-void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig);
+void DRV_GPIO_Init(GPIO_HandleTypeDef* pGPIO_Handle);
 void DRV_GPIO_DeInit(GPIO_TypeDef_t* pGPIOx);
 void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi);
 

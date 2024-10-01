@@ -17,7 +17,7 @@
  * 
  * @return                 - void
 ********************************************************/
-void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi)
+void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx,  EnOrDi_State EnOrDi)
 {
     if (EnOrDi == ENABLE)
     {
@@ -54,80 +54,80 @@ void DRV_GPIO_Pclkcontrol(GPIO_TypeDef_t* pGPIOx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_GPIO_Init(GPIO_TypeDef_t* pGPIOx, GPIO_PinConfig_t* pGPIOPinCofig)
+void DRV_GPIO_Init(GPIO_HandleTypeDef* pGPIO_Handle)
 {
     uint32_t temp; 
 
     // Enable peripheral clock 
-    DRV_GPIO_Pclkcontrol(pGPIOx, ENABLE);
+    DRV_GPIO_Pclkcontrol(pGPIO_Handle->pGPIOx, ENABLE);
     // 1. Configure mode 
-    if(pGPIOPinCofig->PinMode <= GPIO_ANALOG)
+    if(pGPIO_Handle->GPIO_PinConfig.PinMode <= GPIO_ANALOG)
     {
-        temp = (pGPIOPinCofig->PinMode << (2*pGPIOPinCofig->PinNumber));
-        pGPIOx->MODER &= ~(0x03 << pGPIOPinCofig->PinNumber); // clear bit 
-        pGPIOx->MODER |= temp; // set bit 
+        temp = (pGPIO_Handle->GPIO_PinConfig.PinMode << (2*pGPIO_Handle->GPIO_PinConfig.PinNumber));
+        pGPIO_Handle->pGPIOx->MODER &= ~(0x03 << pGPIO_Handle->GPIO_PinConfig.PinNumber); // clear bit
+        pGPIO_Handle->pGPIOx->MODER |= temp; // set bit
     }
     else
     {
         /* interrupts */
-        if(pGPIOPinCofig->PinMode == GPIO_IT_FALLING)
+        if(pGPIO_Handle->GPIO_PinConfig.PinMode == GPIO_IT_FALLING)
         {
             /* 1. Configure FTSR ( Falling Trigger Select Register) */
-            EXTI->FTSR |= (1<< pGPIOPinCofig->PinNumber);// set FTSR bit
-            EXTI->RTSR &= ~(1<< pGPIOPinCofig->PinNumber);// clear RTSR bit
+            EXTI->FTSR |= (1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);// set FTSR bit
+            EXTI->RTSR &= ~(1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);// clear RTSR bit
         }
-        else if(pGPIOPinCofig->PinMode == GPIO_IT_RISING)
+        else if(pGPIO_Handle->GPIO_PinConfig.PinMode == GPIO_IT_RISING)
         {
             /* 1. Configure RTSR ( Falling Trigger Select Register) */
-            EXTI->RTSR |= (1<< pGPIOPinCofig->PinNumber); // set RTSR bit
-            EXTI->FTSR &= ~(1<< pGPIOPinCofig->PinNumber);// clear FTSR bit
+            EXTI->RTSR |= (1<< pGPIO_Handle->GPIO_PinConfig.PinNumber); // set RTSR bit
+            EXTI->FTSR &= ~(1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);// clear FTSR bit
         }
-        else if (pGPIOPinCofig->PinMode == GPIO_IT_FALLING_RISING)
+        else if (pGPIO_Handle->GPIO_PinConfig.PinMode == GPIO_IT_FALLING_RISING)
         {
             /* 1. Configure both register */
-            EXTI->RTSR |= (1<< pGPIOPinCofig->PinNumber);// set RTSR bit
-            EXTI->FTSR |= (1<< pGPIOPinCofig->PinNumber);// set FTSR bit            
+            EXTI->RTSR |= (1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);// set RTSR bit
+            EXTI->FTSR |= (1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);// set FTSR bit            
         }
 
         // 2. Configure the GPIO port selection in SYSCFG_EXTIR
-        uint8_t temp1 = pGPIOPinCofig->PinNumber/4;
-        uint8_t temp2 = pGPIOPinCofig->PinNumber%4;
-        uint8_t portcode = GPIO_BASE_TO_CODE(pGPIOx);
+        uint8_t temp1 = pGPIO_Handle->GPIO_PinConfig.PinNumber/4;
+        uint8_t temp2 = pGPIO_Handle->GPIO_PinConfig.PinNumber%4;
+        uint8_t portcode = GPIO_BASE_TO_CODE(pGPIO_Handle->pGPIOx);
         SYSCFG_PCLK_EN();
         SYSCFG->EXTICR[temp1] = portcode << (4*temp2);
         // 3. Enable EXTI deliver using IMR
-        EXTI->IMR |= (1<< pGPIOPinCofig->PinNumber);
+        EXTI->IMR |= (1<< pGPIO_Handle->GPIO_PinConfig.PinNumber);
         
 
     }
     temp = 0;
 
     // 2. Configure speed
-    temp = (pGPIOPinCofig->PinSpeed << (2*pGPIOPinCofig->PinNumber));
-    pGPIOx->OSPEEDER &= ~(0x03 << pGPIOPinCofig->PinNumber); // clear bit 
-    pGPIOx->OSPEEDER |= temp; // set bit 
+    temp = (pGPIO_Handle->GPIO_PinConfig.PinSpeed << (2*pGPIO_Handle->GPIO_PinConfig.PinNumber));
+    pGPIO_Handle->pGPIOx->OSPEEDER &= ~(0x03 << pGPIO_Handle->GPIO_PinConfig.PinNumber); // clear bit 
+    pGPIO_Handle->pGPIOx->OSPEEDER |= temp; // set bit 
     temp = 0;
 
     // 3. Configure pull up pull down configuration
-    temp = (pGPIOPinCofig->PinPUPDCtrl << (2*pGPIOPinCofig->PinNumber));
-    pGPIOx->PUPDR &= ~(0x03 << pGPIOPinCofig->PinNumber); // clear bit 
-    pGPIOx->PUPDR |= temp; //set bit 
+    temp = (pGPIO_Handle->GPIO_PinConfig.PinPUPDCtrl << (2*pGPIO_Handle->GPIO_PinConfig.PinNumber));
+    pGPIO_Handle->pGPIOx->PUPDR &= ~(0x03 << pGPIO_Handle->GPIO_PinConfig.PinNumber); // clear bit 
+    pGPIO_Handle->pGPIOx->PUPDR |= temp; //set bit 
     temp = 0;
 
     // 4. Configure output type 
-    temp = (pGPIOPinCofig->PinOPType << pGPIOPinCofig->PinNumber);
-    pGPIOx->OTYPER &= ~(0x01 << pGPIOPinCofig->PinNumber); // clear bit 
-    pGPIOx->OTYPER |= temp; //set bit
+    temp = (pGPIO_Handle->GPIO_PinConfig.PinOPType << pGPIO_Handle->GPIO_PinConfig.PinNumber);
+    pGPIO_Handle->pGPIOx->OTYPER &= ~(0x01 << pGPIO_Handle->GPIO_PinConfig.PinNumber); // clear bit 
+    pGPIO_Handle->pGPIOx->OTYPER |= temp; //set bit
     temp = 0;
 
     // 5. Configure alternative function
-    if(pGPIOPinCofig->PinMode == GPIO_ALTERNATE)
+    if(pGPIO_Handle->GPIO_PinConfig.PinMode == GPIO_ALTERNATE)
     {
         uint32_t temp1, temp2;
-        temp1 = pGPIOPinCofig->PinNumber/8;
-        temp2 = pGPIOPinCofig->PinNumber%8;
-        pGPIOx->AFR[temp1] &= ~(0xFF << (4*temp2));
-        pGPIOx->AFR[temp1] |= (pGPIOPinCofig->PinAltFunction << (4*temp2));
+        temp1 = pGPIO_Handle->GPIO_PinConfig.PinNumber/8;
+        temp2 = pGPIO_Handle->GPIO_PinConfig.PinNumber%8;
+        pGPIO_Handle->pGPIOx->AFR[temp1] &= ~(0xFF << (4*temp2));
+        pGPIO_Handle->pGPIOx->AFR[temp1] |= (pGPIO_Handle->GPIO_PinConfig.PinAltFunction << (4*temp2));
     }
 
 }
