@@ -1,4 +1,0 @@
-Change Component Comment : Designator= Old Comment=MCP2551-I/SN New Comment=CAN 2
-Change Component Designator: OldDesignator= NewDesignator=CAN2
-Change Component Designator: OldDesignator=CAN 1 NewDesignator=CAN 2
-Change Net Name : Old Net Name=NetJ3_8 New Net Name=NetCAN2_8
