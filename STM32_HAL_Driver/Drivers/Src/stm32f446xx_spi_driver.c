@@ -46,31 +46,31 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix)
+void DRV_SPI_Init(SPI_Handle_t* hpsix)
 {
     // Configure CR1 register 
     uint32_t tempreg = 0;
-    tempreg &= ~pSPIx->CR1;
+    tempreg &= ~hpsix->pSPIx->CR1;
     
     // Enable peripheral clock 
-    DRV_SPI_Pclkcontrol(pSPIx, ENABLE);
+    DRV_SPI_Pclkcontrol(hpsix->pSPIx, ENABLE);
 
     // 1. Configure device mode
-    tempreg |= (hspix->SPI_DeviceMode << 2);
+    tempreg |= (hpsix->SPIx_Config.SPI_DeviceMode << 2);
     
     // 2. Bus configure 
-    if(hspix->SPI_BusConfig == FullDuplex)
+    if(hpsix->SPIx_Config.SPI_BusConfig == FullDuplex)
     {
         // BIDI should be cleared
         tempreg &=~ (1<<15);
     }
-    else if(hspix->SPI_BusConfig == HalfDuplex)
+    else if(hpsix->SPIx_Config.SPI_BusConfig == HalfDuplex)
     {
         // BIDI should be Set
         tempreg |= (1<<15);
     }
     
-    else if(hspix->SPI_BusConfig == Simplex_Rx)
+    else if(hpsix->SPIx_Config.SPI_BusConfig == Simplex_Rx)
     {
         // BIDI should be cleared and RXONLY bit must be set
         tempreg &=~ (1<<15);
@@ -78,21 +78,21 @@ void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix)
     }
 
     // 3. Configure SPI serial clock peripheral speed
-    tempreg |= (hspix->SPI_SClkSpeed << 3);
+    tempreg |= (hpsix->SPIx_Config.SPI_SClkSpeed << 3);
 
     // 4. Configure SPI Data frame format
-    tempreg |= (hspix->SPI_DFF << 11);
+    tempreg |= (hpsix->SPIx_Config.SPI_DFF << 11);
 
     // 5. Configure SPI polarity clock 
-    tempreg |= (hspix->SPI_CPOL << 1);
+    tempreg |= (hpsix->SPIx_Config.SPI_CPOL << 1);
 
     // 6. Configure SPI phase clock 
-    tempreg |= (hspix->SPI_CPHA << 0);  
+    tempreg |= (hpsix->SPIx_Config.SPI_CPHA << 0);  
 
     // 7. Configure SPI phase clock
-    tempreg |= (hspix->SPI_SSM << 9);
+    tempreg |= (hpsix->SPIx_Config.SPI_SSM << 9);
 
-    pSPIx->CR1 = tempreg;
+    hpsix->pSPIx->CR1 = tempreg;
 }
 
 void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)

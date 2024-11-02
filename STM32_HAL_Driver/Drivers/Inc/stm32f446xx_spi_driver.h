@@ -19,17 +19,24 @@
 #define SPI_TXE_FLAG                        (1 << 1)
 #define SPI_BUSY_FLAG                       (1 << 7)
 
+// SPI Configure structure
 typedef struct 
 {
-    uint8_t SPI_DeviceMode;  // Choose master or slave mode for device
-    uint8_t SPI_BusConfig;   // Configure half-duplex, full-duplex and simplex communications
-    uint8_t SPI_SClkSpeed;   // Configure serial clock speed
-    uint8_t SPI_DFF;         // Configure Data frame format      
-    uint8_t SPI_CPOL;        // Configure Clock Polarity 
-    uint8_t SPI_CPHA;        // Configure Clock Phase
-    uint8_t SPI_SSM;         // Configure slave select management
+    uint8_t SPI_DeviceMode;    // Choose master or slave mode for device
+    uint8_t SPI_BusConfig;     // Configure half-duplex, full-duplex and simplex communications
+    uint8_t SPI_SClkSpeed;     // Configure serial clock speed
+    uint8_t SPI_DFF;           // Configure Data frame format      
+    uint8_t SPI_CPOL;          // Configure Clock Polarity 
+    uint8_t SPI_CPHA;          // Configure Clock Phase
+    uint8_t SPI_SSM;           // Configure slave select management
 }SPI_Config_t;
 
+// SPI Handle structure 
+typedef struct 
+{
+    SPI_TypeDef_t* pSPIx;       //Choose SPI peripheral
+    SPI_Config_t   SPIx_Config;  //Configure
+}SPI_Handle_t;
 
 // SPI enumerated device mode
 enum
