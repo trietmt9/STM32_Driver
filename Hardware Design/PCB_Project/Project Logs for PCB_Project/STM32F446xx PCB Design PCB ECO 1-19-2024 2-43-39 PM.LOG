@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=MCU/PA5/Analog_IN5/TIM2_CH1 Pin=L3-1
-Change Component Designator: OldDesignator= NewDesignator=CAN1
-Change Component Designator: OldDesignator= NewDesignator=U2
-Added Pin To Net: NetName=MCU/PA13 Pin=L3-1
-Added Member To Class: ClassName=STM32F446xx Schematic design Member=Component CAN1 CAN 2
-Added Member To Class: ClassName=STM32F446xx Schematic design Member=Component U2 MPU-9250

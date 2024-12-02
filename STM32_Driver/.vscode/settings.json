@@ -1,8 +1,6 @@
 {
-  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-  "cmake.configureOnOpen": true,
-  "C_Cpp.errorSquiggles": "disabled",
-  "files.associations": {
-    "stm32f446xx_gpio_driver.h": "c"
-  }
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "stm32f446xx.h": "c"
+    }
 }

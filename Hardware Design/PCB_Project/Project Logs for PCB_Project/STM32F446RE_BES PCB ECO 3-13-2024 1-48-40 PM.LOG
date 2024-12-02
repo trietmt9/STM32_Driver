@@ -1,4 +1,0 @@
-Change Component Designator: OldDesignator=Port A1 NewDesignator=Port A
-Change Component Designator: OldDesignator=Port B1 NewDesignator=Port B
-Change Component Designator: OldDesignator=Port C1 NewDesignator=Port C
-Added Member To Class: ClassName=STM32F446RE_BES Member=Component U3 ICM-20948

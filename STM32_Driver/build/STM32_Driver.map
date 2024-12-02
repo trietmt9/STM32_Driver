@@ -1,0 +1,762 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (exit)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o) (__stdio_exit_handler)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o) (_fwalk_sglue)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o) (__sread)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o) (_close_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o) (errno)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o) (_impure_ptr)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o) (_lseek_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o) (_read_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o) (_write_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o) (__retarget_lock_init_recursive)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o) (__call_exitprocs)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o) (atexit)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o) (_free_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o) (_malloc_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o) (__malloc_lock)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o) (_fclose_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o) (__sflush_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o) (_sbrk_r)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o) (__libc_fini_array)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o) (sysconf)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o) (__register_exitproc)
+/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+                              /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o) (__errno)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+ .data          0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .rodata        0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x00000000       0x7c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.extab     0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.exidx     0x00000000       0x10 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .ARM.attributes
+                0x00000000       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .text.exit     0x00000000       0x1c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .debug_frame   0x00000000       0x28 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-exit.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.std      0x00000000       0x6c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x00000000       0x18 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x00000000       0x40 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x00000000       0x18 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000       0x18 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x00000000       0x3c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__sfp_lock_release
+                0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__sfp    0x00000000       0xa4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__sinit  0x00000000       0x30 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x1c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x1c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .data.__sglue  0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .bss.__sf      0x00000000      0x138 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .bss.__stdio_exit_handler
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .debug_frame   0x00000000      0x144 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-findfp.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .text._fwalk_sglue
+                0x00000000       0x3c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .debug_frame   0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text.__sread  0x00000000       0x22 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text.__swrite
+                0x00000000       0x38 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text.__sseek  0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text.__sclose
+                0x00000000        0x8 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .debug_frame   0x00000000       0x88 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-stdio.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .text.memset   0x00000000       0x10 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .debug_frame   0x00000000       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-memset.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .text._close_r
+                0x00000000       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-closer.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0x58 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .bss.errno     0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .debug_frame   0x00000000       0x38 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-reent.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .data._impure_data
+                0x00000000      0x120 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-impure.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .text._lseek_r
+                0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lseekr.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .text._read_r  0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-readr.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .text._write_r
+                0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-writer.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___dd_hash_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___tz_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___env_recursive_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___malloc_recursive_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___at_quick_exit_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .bss.__lock___sfp_recursive_mutex
+                0x00000000        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x00000000       0xac /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .text._malloc_trim_r
+                0x00000000       0xac /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .text._free_r  0x00000000      0x180 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .debug_frame   0x00000000       0x60 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-freer.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x00000000      0x474 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x00000000       0x28 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .bss.__malloc_max_total_mem
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .bss.__malloc_max_sbrked_mem
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .bss.__malloc_top_pad
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .data.__malloc_trim_threshold
+                0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .data.__malloc_av_
+                0x00000000      0x408 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .debug_frame   0x00000000       0x40 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mallocr.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .text.__malloc_lock
+                0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .text.__malloc_unlock
+                0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .debug_frame   0x00000000       0x30 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-mlock.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .text._fclose_r
+                0x00000000       0xaa /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .text.fclose   0x00000000       0x10 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .debug_frame   0x00000000       0x3c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fclose.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .text.__sflush_r
+                0x00000000      0x110 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .text._fflush_r
+                0x00000000       0x4a /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .text.fflush   0x00000000       0x28 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .debug_frame   0x00000000       0x5c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .text._sbrk_r  0x00000000       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sbrkr.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .text.sysconf  0x00000000       0x18 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .debug_frame   0x00000000       0x28 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-sysconf.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .text.__errno  0x00000000        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .debug_frame   0x00000000       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-errno.o)
+ .text          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_Pclkcontrol
+                0x00000000      0x1a0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_Init
+                0x00000000      0x32c CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_DeInit
+                0x00000000      0x148 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_ReadPin
+                0x00000000       0x2c CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_ReadPort
+                0x00000000       0x1c CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_WritePin
+                0x00000000       0x52 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_WritePort
+                0x00000000       0x1e CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_TogglePin
+                0x00000000       0x2a CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_IRQConfig
+                0x00000000      0x10c CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_IRQPriorityCFG
+                0x00000000       0x5c CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text.DRV_GPIO_IRQHandling
+                0x00000000       0x40 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+ .text          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_Pclkcontrol
+                0x00000000       0xe0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_Init
+                0x00000000       0xb4 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_PeripheralEnable
+                0x00000000       0x38 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_SSI
+                0x00000000       0x38 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_SSOE
+                0x00000000       0x38 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_DeInit
+                0x00000000       0xb0 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.SPI_FlagStatus
+                0x00000000       0x28 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_Transmit
+                0x00000000       0x6e CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text.DRV_SPI_Receive
+                0x00000000       0x6e CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+ .text          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+ .text          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .bss.__env     0x00000000        0x4 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .data.environ  0x00000000        0x4 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text.initialise_monitor_handles
+                0x00000000        0xe CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._getpid  0x00000000       0x10 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._kill    0x00000000       0x20 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._exit    0x00000000       0x16 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._read    0x00000000       0x3a CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._write   0x00000000       0x38 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._close   0x00000000       0x18 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._fstat   0x00000000       0x20 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._isatty  0x00000000       0x16 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._lseek   0x00000000       0x1a CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._open    0x00000000       0x1c CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._wait    0x00000000       0x1e CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._unlink  0x00000000       0x1e CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._times   0x00000000       0x18 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._stat    0x00000000       0x20 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._link    0x00000000       0x20 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._fork    0x00000000       0x16 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text._execve  0x00000000       0x22 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+ .text          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .bss.__sbrk_heap_end
+                0x00000000        0x4 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .text._sbrk    0x00000000       0x6c CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+ .text          0x00000000       0x14 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+ .data          0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .rodata        0x00000000       0x24 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+ .text          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .data          0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .bss           0x00000000        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00020000         xrw
+FLASH            0x08000000         0x00080000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+START GROUP
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libsupc++.a
+END GROUP
+LOAD CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj
+LOAD CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_spi_driver.c.obj
+LOAD CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+LOAD CMakeFiles/STM32_Driver.dir/Src/syscall.c.obj
+LOAD CMakeFiles/STM32_Driver.dir/Src/sysmem.c.obj
+LOAD CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+START GROUP
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+END GROUP
+START GROUP
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtend.o
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x20020000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000200                        _Min_Heap_Size = 0x200
+                0x00000400                        _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x1c4
+                0x08000000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x1c4 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+                0x08000000                g_pfnVectors
+                0x080001c4                        . = ALIGN (0x4)
+
+.text           0x080001c4      0x1d0
+                0x080001c4                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x080001c4       0x40 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(.text*)
+ .text.__libc_init_array
+                0x08000204       0x48 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+                0x08000204                __libc_init_array
+ .text.__retarget_lock_acquire_recursive
+                0x0800024c        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+                0x0800024c                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x0800024e        0x2 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+                0x0800024e                __retarget_lock_release_recursive
+ .text.startup.register_fini
+                0x08000250       0x14 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .text.atexit   0x08000264        0xc /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+                0x08000264                atexit
+ .text.__libc_fini_array
+                0x08000270       0x28 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+                0x08000270                __libc_fini_array
+ .text.__register_exitproc
+                0x08000298       0x80 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+                0x08000298                __register_exitproc
+ .text.main     0x08000318       0x10 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+                0x08000318                main
+ .text.Reset_Handler
+                0x08000328       0x50 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+                0x08000328                Reset_Handler
+ .text.Default_Handler
+                0x08000378        0x2 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+                0x08000378                RTC_Alarm_IRQHandler
+                0x08000378                EXTI2_IRQHandler
+                0x08000378                TIM8_CC_IRQHandler
+                0x08000378                SPDIF_Rx_IRQHandler
+                0x08000378                SPI4_IRQHandler
+                0x08000378                TIM1_CC_IRQHandler
+                0x08000378                QuadSPI_IRQHandler
+                0x08000378                DMA2_Stream5_IRQHandler
+                0x08000378                HardFault_Handler
+                0x08000378                DMA1_Stream5_IRQHandler
+                0x08000378                SysTick_Handler
+                0x08000378                PVD_IRQHandler
+                0x08000378                SDIO_IRQHandler
+                0x08000378                TAMP_STAMP_IRQHandler
+                0x08000378                PendSV_Handler
+                0x08000378                NMI_Handler
+                0x08000378                CAN2_RX1_IRQHandler
+                0x08000378                EXTI3_IRQHandler
+                0x08000378                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000378                TIM1_UP_TIM10_IRQHandler
+                0x08000378                FMPI2C1_error_IRQHandler
+                0x08000378                TIM8_UP_TIM13_IRQHandler
+                0x08000378                I2C3_ER_IRQHandler
+                0x08000378                EXTI0_IRQHandler
+                0x08000378                I2C2_EV_IRQHandler
+                0x08000378                DMA1_Stream2_IRQHandler
+                0x08000378                CAN1_RX0_IRQHandler
+                0x08000378                OTG_HS_WKUP_IRQHandler
+                0x08000378                UsageFault_Handler
+                0x08000378                CAN2_SCE_IRQHandler
+                0x08000378                DMA2_Stream2_IRQHandler
+                0x08000378                SPI1_IRQHandler
+                0x08000378                TIM6_DAC_IRQHandler
+                0x08000378                TIM1_BRK_TIM9_IRQHandler
+                0x08000378                DCMI_IRQHandler
+                0x08000378                CAN2_RX0_IRQHandler
+                0x08000378                DMA2_Stream3_IRQHandler
+                0x08000378                FMPI2C1_IRQHandler
+                0x08000378                SAI2_IRQHandler
+                0x08000378                USART6_IRQHandler
+                0x08000378                USART3_IRQHandler
+                0x08000378                CAN1_RX1_IRQHandler
+                0x08000378                UART5_IRQHandler
+                0x08000378                DMA2_Stream0_IRQHandler
+                0x08000378                TIM4_IRQHandler
+                0x08000378                I2C1_EV_IRQHandler
+                0x08000378                HDMI_CEC_IRQHandler
+                0x08000378                DMA1_Stream6_IRQHandler
+                0x08000378                DMA1_Stream1_IRQHandler
+                0x08000378                UART4_IRQHandler
+                0x08000378                TIM3_IRQHandler
+                0x08000378                RCC_IRQHandler
+                0x08000378                TIM8_BRK_TIM12_IRQHandler
+                0x08000378                Default_Handler
+                0x08000378                EXTI15_10_IRQHandler
+                0x08000378                ADC_IRQHandler
+                0x08000378                DMA1_Stream7_IRQHandler
+                0x08000378                TIM7_IRQHandler
+                0x08000378                CAN2_TX_IRQHandler
+                0x08000378                TIM5_IRQHandler
+                0x08000378                DMA2_Stream7_IRQHandler
+                0x08000378                I2C3_EV_IRQHandler
+                0x08000378                EXTI9_5_IRQHandler
+                0x08000378                RTC_WKUP_IRQHandler
+                0x08000378                SPI2_IRQHandler
+                0x08000378                OTG_HS_EP1_IN_IRQHandler
+                0x08000378                MemManage_Handler
+                0x08000378                DMA1_Stream0_IRQHandler
+                0x08000378                CAN1_TX_IRQHandler
+                0x08000378                SVC_Handler
+                0x08000378                EXTI4_IRQHandler
+                0x08000378                OTG_HS_EP1_OUT_IRQHandler
+                0x08000378                WWDG_IRQHandler
+                0x08000378                TIM2_IRQHandler
+                0x08000378                OTG_FS_WKUP_IRQHandler
+                0x08000378                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000378                OTG_HS_IRQHandler
+                0x08000378                EXTI1_IRQHandler
+                0x08000378                USART2_IRQHandler
+                0x08000378                I2C2_ER_IRQHandler
+                0x08000378                DMA2_Stream1_IRQHandler
+                0x08000378                CAN1_SCE_IRQHandler
+                0x08000378                FLASH_IRQHandler
+                0x08000378                DMA2_Stream4_IRQHandler
+                0x08000378                BusFault_Handler
+                0x08000378                USART1_IRQHandler
+                0x08000378                OTG_FS_IRQHandler
+                0x08000378                SPI3_IRQHandler
+                0x08000378                DMA1_Stream4_IRQHandler
+                0x08000378                I2C1_ER_IRQHandler
+                0x08000378                FMC_IRQHandler
+                0x08000378                DMA2_Stream6_IRQHandler
+                0x08000378                SAI1_IRQHandler
+                0x08000378                DMA1_Stream3_IRQHandler
+ *(.glue_7)
+ .glue_7        0x0800037a        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x0800037a        0x0 linker stubs
+ *(.eh_frame)
+ *fill*         0x0800037a        0x2 
+ .eh_frame      0x0800037c        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(.init)
+ .init          0x0800037c        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800037c                _init
+ .init          0x08000380        0x8 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+ *(.fini)
+ .fini          0x08000388        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000388                _fini
+ .fini          0x0800038c        0x8 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08000394                        . = ALIGN (0x4)
+                0x08000394                        _etext = .
+
+.vfp11_veneer   0x08000394        0x0
+ .vfp11_veneer  0x08000394        0x0 linker stubs
+
+.v4_bx          0x08000394        0x0
+ .v4_bx         0x08000394        0x0 linker stubs
+
+.iplt           0x08000394        0x0
+ .iplt          0x08000394        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.rodata         0x08000394        0x0
+                0x08000394                        . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x08000394                        . = ALIGN (0x4)
+
+.ARM.extab      0x08000394        0x0
+                0x08000394                        . = ALIGN (0x4)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08000394                        . = ALIGN (0x4)
+
+.ARM            0x08000394        0x0
+                0x08000394                        . = ALIGN (0x4)
+                0x08000394                        __exidx_start = .
+ *(.ARM.exidx*)
+                0x08000394                        __exidx_end = .
+                0x08000394                        . = ALIGN (0x4)
+
+.preinit_array  0x08000394        0x0
+                0x08000394                        . = ALIGN (0x4)
+                0x08000394                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x08000394                        PROVIDE (__preinit_array_end = .)
+                0x08000394                        . = ALIGN (0x4)
+
+.init_array     0x08000394        0x8
+                0x08000394                        . = ALIGN (0x4)
+                0x08000394                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ .init_array.00000
+                0x08000394        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ *(.init_array*)
+ .init_array    0x08000398        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800039c                        PROVIDE (__init_array_end = .)
+                0x0800039c                        . = ALIGN (0x4)
+
+.fini_array     0x0800039c        0x4
+                0x0800039c                        . = ALIGN (0x4)
+                0x0800039c                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array*)
+ .fini_array    0x0800039c        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x080003a0                        PROVIDE (__fini_array_end = .)
+                0x080003a0                        . = ALIGN (0x4)
+                0x080003a0                        _sidata = LOADADDR (.data)
+
+.rel.dyn        0x080003a0        0x0
+ .rel.iplt      0x080003a0        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+
+.data           0x20000000        0x4 load address 0x080003a0
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data)
+ *(.data*)
+ .data.__atexit_recursive_mutex
+                0x20000000        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+                0x20000000                __atexit_recursive_mutex
+ *(.RamFunc)
+ *(.RamFunc*)
+                0x20000004                        . = ALIGN (0x4)
+                0x20000004                        _edata = .
+
+.igot.plt       0x20000004        0x0 load address 0x080003a4
+ .igot.plt      0x20000004        0x0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20000004                        . = ALIGN (0x4)
+
+.bss            0x20000004      0x1b4 load address 0x080003a4
+                0x20000004                        _sbss = .
+                0x20000004                        __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x20000004       0x1c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *(.bss*)
+ .bss.__lock___atexit_recursive_mutex
+                0x20000020        0x1 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+                0x20000020                __lock___atexit_recursive_mutex
+ *fill*         0x20000021        0x3 
+ .bss.__atexit  0x20000024        0x4 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+                0x20000024                __atexit
+ .bss.__atexit0
+                0x20000028      0x190 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+                0x20000028                __atexit0
+ *(COMMON)
+                0x200001b8                        . = ALIGN (0x4)
+                0x200001b8                        _ebss = .
+                0x200001b8                        __bss_end__ = _ebss
+
+._user_heap_stack
+                0x200001b8      0x600 load address 0x080003a4
+                0x200001b8                        . = ALIGN (0x8)
+                [!provide]                        PROVIDE (end = .)
+                0x200001b8                        PROVIDE (_end = .)
+                0x200003b8                        . = (. + _Min_Heap_Size)
+ *fill*         0x200001b8      0x200 
+                0x200007b8                        . = (. + _Min_Stack_Size)
+ *fill*         0x200003b8      0x400 
+                0x200007b8                        . = ALIGN (0x8)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x30
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x22 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crti.o
+ .ARM.attributes
+                0x00000022       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .ARM.attributes
+                0x00000056       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+ .ARM.attributes
+                0x0000008a       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .ARM.attributes
+                0x000000be       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .ARM.attributes
+                0x000000f2       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+ .ARM.attributes
+                0x00000126       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+ .ARM.attributes
+                0x0000015a       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+ .ARM.attributes
+                0x0000018e       0x34 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+ .ARM.attributes
+                0x000001c2       0x21 CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+ .ARM.attributes
+                0x000001e3       0x22 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/crtn.o
+OUTPUT(STM32_Driver.elf elf32-littlearm)
+LOAD linker stubs
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
+LOAD /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7e-m+fp/hard/libgcc.a
+
+.debug_frame    0x00000000      0x1c0
+ .debug_frame   0x00000000       0x2c /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-init.o)
+ .debug_frame   0x0000002c       0xb0 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-lock.o)
+ .debug_frame   0x000000dc       0x58 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00000134       0x20 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-atexit.o)
+ .debug_frame   0x00000154       0x38 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-fini.o)
+ .debug_frame   0x0000018c       0x34 /home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(libc_a-__atexit.o)
+
+.comment        0x00000000       0x43
+ .comment       0x00000000       0x43 CMakeFiles/STM32_Driver.dir/Src/main.c.obj
+                                 0x44 (size before relaxing)
