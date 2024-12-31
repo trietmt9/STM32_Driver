@@ -1,5 +1,0 @@
-# ninja log v5
-20	238	7573542777589657	CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj	94a22a1a41dcc183
-13	213	7573544899191132	CMakeFiles/STM32_Driver.dir/Drivers/Src/stm32f446xx_gpio_driver.c.obj	d36a1c7ef3de67e5
-6	214	7573544899010714	CMakeFiles/STM32_Driver.dir/Src/main.c.obj	ef853e970c6592d8
-215	834	7573544901432384	STM32_Driver.elf	2ba38e3517cf9c5a
