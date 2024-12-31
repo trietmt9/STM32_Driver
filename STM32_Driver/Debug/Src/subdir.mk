@@ -5,7 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/main_GPIO.c 
+../Src/main.c 
 
 OBJS += \
 ./Src/main_GPIO.o 
@@ -21,7 +21,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/main_GPIO.cyclo ./Src/main_GPIO.d ./Src/main_GPIO.o ./Src/main_GPIO.su
+	-$(RM) ./Src/main.cyclo ./Src/main_GPIO.d ./Src/main_GPIO.o ./Src/main_GPIO.su
 
 .PHONY: clean-Src
 

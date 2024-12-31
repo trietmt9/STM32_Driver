@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/debug/build/
+cmake_ninja_workdir = C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/build/debug/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target STM32_Driver
 
@@ -49,20 +49,29 @@ cmake_ninja_workdir = C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/deb
 
 build cmake_object_order_depends_target_STM32_Driver: phony || CMakeFiles/STM32_Driver.dir
 
-build CMakeFiles/STM32_Driver.dir/Src/main_GPIO.c.obj: C_COMPILER__STM32_Driver_unscanned_Debug C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/Src/main_GPIO.c || cmake_object_order_depends_target_STM32_Driver
-  DEFINES = -DDEBUG -DNUCLEO_F446RE -DSTM32 -DSTM32F4 -DSTM32F446RETx
-  DEP_FILE = CMakeFiles\STM32_Driver.dir\Src\main_GPIO.c.obj.d
-  FLAGS = -g -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
-  INCLUDES = -IC:/Users/pc/Documents/STM32_Driver/STM32_Driver/Inc -IC:/Users/pc/Documents/STM32_Driver/STM32_Driver/Drivers/Inc
+build CMakeFiles/STM32_Driver.dir/Src/main.c.obj: C_COMPILER__STM32_Driver_unscanned_Debug C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Src/main.c || cmake_object_order_depends_target_STM32_Driver
+  DEFINES = -DDEBUG
+  DEP_FILE = CMakeFiles\STM32_Driver.dir\Src\main.c.obj.d
+  FLAGS = -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
+  INCLUDES = -IC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Inc -IC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Drivers/Inc
   OBJECT_DIR = CMakeFiles\STM32_Driver.dir
   OBJECT_FILE_DIR = CMakeFiles\STM32_Driver.dir\Src
 
-build CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj: ASM_COMPILER__STM32_Driver_unscanned_Debug C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/Startup/startup_stm32f446retx.s || cmake_object_order_depends_target_STM32_Driver
+build CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj: ASM_COMPILER__STM32_Driver_unscanned_Debug C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Startup/startup_stm32f446retx.s || cmake_object_order_depends_target_STM32_Driver
   DEFINES = -DDEBUG
   DEP_FILE = CMakeFiles\STM32_Driver.dir\Startup\startup_stm32f446retx.s.obj.d
-  FLAGS = -g -g3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+  FLAGS = -g -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -x assembler-with-cpp -MMD -MP -Og -g3 -ggdb
+  INCLUDES = -IC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver
   OBJECT_DIR = CMakeFiles\STM32_Driver.dir
   OBJECT_FILE_DIR = CMakeFiles\STM32_Driver.dir\Startup
+
+build CMakeFiles/STM32_Driver.dir/Drivers/Src/stm32f446xx_gpio_driver.c.obj: C_COMPILER__STM32_Driver_unscanned_Debug C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Drivers/Src/stm32f446xx_gpio_driver.c || cmake_object_order_depends_target_STM32_Driver
+  DEFINES = -DDEBUG
+  DEP_FILE = CMakeFiles\STM32_Driver.dir\Drivers\Src\stm32f446xx_gpio_driver.c.obj.d
+  FLAGS = -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb
+  INCLUDES = -IC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Inc -IC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/Drivers/Inc
+  OBJECT_DIR = CMakeFiles\STM32_Driver.dir
+  OBJECT_FILE_DIR = CMakeFiles\STM32_Driver.dir\Drivers\Src
 
 
 # =============================================================================
@@ -72,11 +81,12 @@ build CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj: ASM_COMPI
 #############################################
 # Link the executable STM32_Driver.elf
 
-build STM32_Driver.elf: C_EXECUTABLE_LINKER__STM32_Driver_Debug CMakeFiles/STM32_Driver.dir/Src/main_GPIO.c.obj CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj
+build STM32_Driver.elf: C_EXECUTABLE_LINKER__STM32_Driver_Debug CMakeFiles/STM32_Driver.dir/Src/main.c.obj CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj CMakeFiles/STM32_Driver.dir/Drivers/Src/stm32f446xx_gpio_driver.c.obj
   FLAGS = -g
-  LINK_FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -T C:/Users/pc/Documents/STM32_Driver/STM32_Driver/STM32F446RETX_FLASH.ld
+  LINK_FLAGS = -TC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/stm32f446retx_FLASH.ld -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wl,-Map=STM32_Driver.map -u _printf_float --specs=nosys.specs -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group -Wl,-z,max-page-size=8 -Wl,--print-memory-usage
+  LINK_PATH = -LC:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/STM32_Driver
   OBJECT_DIR = CMakeFiles\STM32_Driver.dir
-  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-size.exe C:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf && cd /D C:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-objcopy.exe -O ihex C:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf STM32_Driver.hex && cd /D C:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-objcopy.exe -O binary C:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf STM32_Driver.bin"
+  POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-size.exe C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf && C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-objcopy.exe -O ihex C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf STM32_Driver.hex && C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-objcopy.exe -O binary C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/build/debug/build/STM32_Driver.elf STM32_Driver.bin"
   PRE_LINK = cd .
   TARGET_FILE = STM32_Driver.elf
   TARGET_PDB = STM32_Driver.elf.dbg
@@ -86,7 +96,7 @@ build STM32_Driver.elf: C_EXECUTABLE_LINKER__STM32_Driver_Debug CMakeFiles/STM32
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\pc\Documents\STM32_Driver\STM32_Driver -BC:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeCLT_1.17.0\CMake\bin\cmake-gui.exe -SC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver -BC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -98,7 +108,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeCLT_1.15.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\pc\Documents\STM32_Driver\STM32_Driver -BC:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build && C:\ST\STM32CubeCLT_1.17.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver -BC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -116,7 +126,7 @@ build STM32_Driver: phony STM32_Driver.elf
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/pc/Documents/STM32_Driver/STM32_Driver/build/debug/build
+# Folder: C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/build/debug/build
 
 build all: phony STM32_Driver.elf
 
@@ -127,14 +137,14 @@ build all: phony STM32_Driver.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/CMakeLists.txt C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/cmake/gcc-arm-none-eabi.cmake C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/cmake/st-project.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/CMakeLists.txt C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/cmake/gcc-arm-none-eabi.cmake C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/cmake/vscode_generated.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.15.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/CMakeLists.txt C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/cmake/gcc-arm-none-eabi.cmake C$:/Users/pc/Documents/STM32_Driver/STM32_Driver/cmake/st-project.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/ST/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/CMakeLists.txt C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/cmake/gcc-arm-none-eabi.cmake C$:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/cmake/vscode_generated.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

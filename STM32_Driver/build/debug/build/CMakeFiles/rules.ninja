@@ -17,7 +17,7 @@
 rule ASM_COMPILER__STM32_Driver_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -x assembler-with-cpp $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -x assembler-with-cpp $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -27,7 +27,7 @@ rule ASM_COMPILER__STM32_Driver_unscanned_Debug
 rule C_COMPILER__STM32_Driver_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -35,7 +35,7 @@ rule C_COMPILER__STM32_Driver_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__STM32_Driver_Debug
-  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\ST\STM32CubeIDE_1.14.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130\tools\bin\arm-none-eabi-gcc.exe -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\ST\STM32CubeCLT_1.15.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\pc\Documents\STM32_Driver\STM32_Driver -BC:\Users\pc\Documents\STM32_Driver\STM32_Driver\build\debug\build
+  command = C:\ST\STM32CubeCLT_1.17.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver -BC:\Users\Stephen\OneDrive\Documents\STM32_Driver\STM32_Driver\build\debug\build
   description = Re-running CMake...
   generator = 1
 
@@ -61,7 +61,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\Users\pc\AppData\Roaming\Code\User\globalStorage\ms-vscode.vscode-embedded-tools\vcpkg\root\downloads\artifacts\vcpkg-ce-default\tools.ninja.build.ninja\1.10.2\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\ST\STM32CubeCLT_1.17.0\Ninja\bin\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -69,6 +69,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\Users\pc\AppData\Roaming\Code\User\globalStorage\ms-vscode.vscode-embedded-tools\vcpkg\root\downloads\artifacts\vcpkg-ce-default\tools.ninja.build.ninja\1.10.2\ninja.exe -t targets
+  command = C:\ST\STM32CubeCLT_1.17.0\Ninja\bin\ninja.exe -t targets
   description = All primary targets available:
 
