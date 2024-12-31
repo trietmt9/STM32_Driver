@@ -31,13 +31,10 @@ set(cpu_PARAMS
 )
 
 # Sources
-set(sources_SRCS
-    ${CMAKE_CURRENT_SOURCE_DIR}/Driver/Src/stm32f446xx_gpio_driver.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/Driver/Src/stm32f446xx_spi_driver.c)
+set(sources_SRCS)
 
 # Include directories for all compilers
-set(include_DIRS
-    ${CMAKE_CURRENT_SOURCE_DIR}/Driver/Inc)
+set(include_DIRS)
 
 # Include directories for each compiler
 set(include_c_DIRS)

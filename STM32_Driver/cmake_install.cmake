@@ -1,8 +1,16 @@
+<<<<<<< HEAD:STM32_Driver/build/cmake_install.cmake
 # Install script for directory: /home/trietmt9/Documents/STM32_Driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "/usr/local")
+=======
+# Install script for directory: C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/STM32_Driver")
+>>>>>>> Firmware:STM32_Driver/cmake_install.cmake
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +53,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD:STM32_Driver/build/cmake_install.cmake
 file(WRITE "/home/trietmt9/Documents/STM32_Driver/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/Stephen/OneDrive/Documents/STM32_Driver/STM32_Driver/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> Firmware:STM32_Driver/cmake_install.cmake
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,8 @@
+<<<<<<< HEAD:STM32_Driver/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_COMPILER "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++")
+=======
+set(CMAKE_CXX_COMPILER "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe")
+>>>>>>> Firmware:STM32_Driver/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "12.3.1")
@@ -22,11 +26,19 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
+<<<<<<< HEAD:STM32_Driver/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_AR "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar")
 set(CMAKE_CXX_COMPILER_AR "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ar")
 set(CMAKE_RANLIB "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ranlib")
 set(CMAKE_LINKER "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/bin/arm-none-eabi-ld")
+=======
+set(CMAKE_AR "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ar.exe")
+set(CMAKE_RANLIB "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/arm-none-eabi-ld.exe")
+>>>>>>> Firmware:STM32_Driver/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -79,7 +91,11 @@ endif()
 
 
 
+<<<<<<< HEAD:STM32_Driver/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1;/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/arm-none-eabi;/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/backward;/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include;/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include-fixed;/home/trietmt9/st/stm32cubeclt_1.16.0/GNU-tools-for-STM32/arm-none-eabi/include")
+=======
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/arm-none-eabi;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/arm-none-eabi/include/c++/12.3.1/backward;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/lib/gcc/arm-none-eabi/12.3.1/include-fixed;C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/arm-none-eabi/include")
+>>>>>>> Firmware:STM32_Driver/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
