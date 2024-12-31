@@ -1,11 +1,11 @@
 /*
- * main_GPIO.c
+ * main.c
  *
  *  Created on: Dec 23, 2023
  *      Author: trietmt9
  */
-#include <stm32f446xx.h>
-#include <stm32f446xx_gpio_driver.h>
+#include "stm32f446xx.h"
+#include "stm32f446xx_gpio_driver.h"
 
 volatile uint8_t mode = 0; 
 
@@ -56,23 +56,22 @@ int main(void)
  */
 void GPIO_Init(void)
 {
-    GPIO_PinConfig_t GPIO_Struct = {0};
+    GPIO_HandleTypeDef GPIO_Struct = {0};
 
     // LED PA5
-    GPIO_Struct.PinNumber   = GPIO_PIN_5;
-    GPIO_Struct.PinMode     = GPIO_OUTPUT;
-    GPIO_Struct.PinSpeed    = FAST;
-    GPIO_Struct.PinOPType   = PushPull;
-    GPIO_Struct.PinPUPDCtrl = NoPUPD;
-    DRV_GPIO_Pclkcontrol(GPIOA, ENABLE);
-    DRV_GPIO_Init(GPIOA, &GPIO_Struct);
-
+    GPIO_Struct.pGPIOx                                      = GPIOA;
+    GPIO_Struct.GPIO_PinConfig.PinNumber                    = GPIO_PIN_5;
+    GPIO_Struct.GPIO_PinConfig.PinMode                      = GPIO_OUTPUT;
+    GPIO_Struct.GPIO_PinConfig.PinSpeed                     = FAST;
+    GPIO_Struct.GPIO_PinConfig.PinOPType                    = PushPull;
+    GPIO_Struct.GPIO_PinConfig.PinPUPDCtrl                  = NoPUPD;
+    DRV_GPIO_Init(&GPIO_Struct);
     // Button PC13
-    GPIO_Struct.PinNumber   = GPIO_PIN_13;
-    GPIO_Struct.PinMode     = GPIO_IT_FALLING;
-    GPIO_Struct.PinPUPDCtrl = PullUp; 
-    DRV_GPIO_Pclkcontrol(GPIOC, ENABLE);
-    DRV_GPIO_Init(GPIOC, &GPIO_Struct);
+    GPIO_Struct.pGPIOx                                      = GPIOC;
+    GPIO_Struct.GPIO_PinConfig.PinNumber                    = GPIO_PIN_13;
+    GPIO_Struct.GPIO_PinConfig.PinMode                      = GPIO_IT_FALLING;
+    GPIO_Struct.GPIO_PinConfig.PinPUPDCtrl                  = PullUp; 
+    DRV_GPIO_Init(&GPIO_Struct);
 }
 
 /**
