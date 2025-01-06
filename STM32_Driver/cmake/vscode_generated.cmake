@@ -25,14 +25,14 @@ set(sources_SRCS ${sources_SRCS}
     
 	${CMAKE_CURRENT_SOURCE_DIR}/Src/main.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Startup/startup_stm32f446retx.s
-	${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Src/stm32f446xx_gpio_driver.c
+	${CMAKE_CURRENT_SOURCE_DIR}/Driver/Src/stm32f446xx_gpio_driver.c
 )
 
 # Include directories
 set(include_c_DIRS ${include_c_DIRS}
     
 	${CMAKE_CURRENT_SOURCE_DIR}/Inc
-	${CMAKE_CURRENT_SOURCE_DIR}/Drivers/Inc
+	${CMAKE_CURRENT_SOURCE_DIR}/Driver/Inc
 )
 set(include_cxx_DIRS ${include_cxx_DIRS}
     
