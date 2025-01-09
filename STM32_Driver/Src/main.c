@@ -11,7 +11,7 @@ volatile uint8_t mode = 0;
 
 void delay(uint32_t timeout)
 {
-    for(uint32_t i = 0; i < (timeout*1000); i++);
+    for(uint32_t i = 0; i < (timeout*100000); i++);
 }
 
 void GPIO_Init(void);
@@ -30,11 +30,11 @@ int main(void)
         switch (mode)
         {
         case 0:
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
+            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, RESET);
             break;
 
         case 1:
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, RESET);
+            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
             break;
 
         case 2:
