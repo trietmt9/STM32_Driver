@@ -37,7 +37,7 @@ void GPIO_INIT(void)
     LEDPin.GPIO_PinConfig.PinPUPDCtrl     = NoPUPD;
     LEDPin.GPIO_PinConfig.PinSpeed        = FAST;
 
-    DRV_GPIO_Pclkcontrol(LEDPin.pGPIOx, ENABLE)
+    DRV_GPIO_Pclkcontrol(LEDPin.pGPIOx, ENABLE);
 }
 
 
