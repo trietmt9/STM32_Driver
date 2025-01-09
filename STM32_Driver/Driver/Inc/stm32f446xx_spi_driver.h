@@ -19,6 +19,7 @@
 #define SPI_TXE_FLAG                        (1 << 1)
 #define SPI_BUSY_FLAG                       (1 << 7)
 
+// SPI Configuration struct 
 typedef struct 
 {
     uint8_t SPI_DeviceMode;  // Choose master or slave mode for device
@@ -30,6 +31,13 @@ typedef struct
     uint8_t SPI_SSM;         // Configure slave select management
 }SPI_Config_t;
 
+// SPI handler struct 
+typedef struct 
+{
+    SPI_TypeDef_t* pSPIx; // SPI register handle
+    SPI_Config_t SPIConfig; // SPI configuration handle
+
+}SPI_Handle_t;
 
 // SPI enumerated device mode
 enum
@@ -99,8 +107,8 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 /*
  * Init, Deinit and Enable 
  */
-void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix);
-void DRV_SPI_DeInit(SPI_TypeDef_t* pSPIx);
+void DRV_SPI_Init(SPI_Handle_t* hspix);
+void DRV_SPI_DeInit(SPI_Handle_t* hspix);
 void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
@@ -116,7 +124,7 @@ void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_
  */
 void DRV_SPI_IRQConfig(uint8_t IRQNumber, EnOrDi_State EnOrDi);
 void DRV_SPI_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority);
-void DRV_SPI_IRQHandling(SPI_TypeDef_t* pSPI, SPI_Config_t* pSPICofig);
+void DRV_SPI_IRQHandling(SPI_Handle_t* phspi);
 
 /*
  * SPI get flag status 

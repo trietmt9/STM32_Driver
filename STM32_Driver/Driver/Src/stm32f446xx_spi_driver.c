@@ -46,31 +46,31 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix)
+void DRV_SPI_Init(SPI_Handle_t* hspix)
 {
     // Configure CR1 register 
     uint32_t tempreg = 0;
-    tempreg &= ~pSPIx->CR1;
+    tempreg &= ~hspix->pSPIx->CR1;
     
     // Enable peripheral clock 
-    DRV_SPI_Pclkcontrol(pSPIx, ENABLE);
+    DRV_SPI_Pclkcontrol(hspix->pSPIx, ENABLE);
 
     // 1. Configure device mode
-    tempreg |= (hspix->SPI_DeviceMode << 2);
+    tempreg |= (hspix->SPIConfig.SPI_DeviceMode << 2);
     
     // 2. Bus configure 
-    if(hspix->SPI_BusConfig == FullDuplex)
+    if(hspix->SPIConfig.SPI_BusConfig == FullDuplex)
     {
         // BIDI should be cleared
         tempreg &=~ (1<<15);
     }
-    else if(hspix->SPI_BusConfig == HalfDuplex)
+    else if(hspix->SPIConfig.SPI_BusConfig == HalfDuplex)
     {
         // BIDI should be Set
         tempreg |= (1<<15);
     }
     
-    else if(hspix->SPI_BusConfig == Simplex_Rx)
+    else if(hspix->SPIConfig.SPI_BusConfig == Simplex_Rx)
     {
         // BIDI should be cleared and RXONLY bit must be set
         tempreg &=~ (1<<15);
@@ -78,21 +78,21 @@ void DRV_SPI_Init(SPI_TypeDef_t* pSPIx, SPI_Config_t* hspix)
     }
 
     // 3. Configure SPI serial clock peripheral speed
-    tempreg |= (hspix->SPI_SClkSpeed << 3);
+    tempreg |= (hspix->SPIConfig.SPI_SClkSpeed << 3);
 
     // 4. Configure SPI Data frame format
-    tempreg |= (hspix->SPI_DFF << 11);
+    tempreg |= (hspix->SPIConfig.SPI_DFF << 11);
 
     // 5. Configure SPI polarity clock 
-    tempreg |= (hspix->SPI_CPOL << 1);
+    tempreg |= (hspix->SPIConfig.SPI_CPOL << 1);
 
     // 6. Configure SPI phase clock 
-    tempreg |= (hspix->SPI_CPHA << 0);  
+    tempreg |= (hspix->SPIConfig.SPI_CPHA << 0);  
 
     // 7. Configure SPI phase clock
-    tempreg |= (hspix->SPI_SSM << 9);
+    tempreg |= (hspix->SPIConfig.SPI_SSM << 9);
 
-    pSPIx->CR1 = tempreg;
+    hspix->pSPIx->CR1 = tempreg;
 }
 
 void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
@@ -160,12 +160,12 @@ void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_DeInit(SPI_TypeDef_t* pSPIx)
+void DRV_SPI_DeInit(SPI_Handle_t* hspix)
 {
-        if(pSPIx == SPI1) SPI1_REG_RESET();
-        else if(pSPIx == SPI2) SPI2_REG_RESET();
-        else if(pSPIx == SPI3) SPI3_REG_RESET();
-        else if(pSPIx == SPI4) SPI4_REG_RESET();
+        if(hspix->pSPIx == SPI1) SPI1_REG_RESET();
+        else if(hspix->pSPIx == SPI2) SPI2_REG_RESET();
+        else if(hspix->pSPIx == SPI3) SPI3_REG_RESET();
+        else if(hspix->pSPIx == SPI4) SPI4_REG_RESET();
 }
 
 /*******************************************************
