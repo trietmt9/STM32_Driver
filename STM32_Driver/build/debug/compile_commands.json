@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/stephen/Documents/STM32_Driver/STM32_Driver/build/debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -I/home/stephen/Documents/STM32_Driver/STM32_Driver/Inc -I/home/stephen/Documents/STM32_Driver/STM32_Driver/Driver/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb -o CMakeFiles/STM32_Driver.dir/Src/main.c.obj -c /home/stephen/Documents/STM32_Driver/STM32_Driver/Src/main.c",
+  "file": "/home/stephen/Documents/STM32_Driver/STM32_Driver/Src/main.c",
+  "output": "CMakeFiles/STM32_Driver.dir/Src/main.c.obj"
+},
+{
+  "directory": "/home/stephen/Documents/STM32_Driver/STM32_Driver/build/debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -I/home/stephen/Documents/STM32_Driver/STM32_Driver -g -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -x assembler-with-cpp -MMD -MP -Og -g3 -ggdb -o CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj -c /home/stephen/Documents/STM32_Driver/STM32_Driver/Startup/startup_stm32f446retx.s",
+  "file": "/home/stephen/Documents/STM32_Driver/STM32_Driver/Startup/startup_stm32f446retx.s",
+  "output": "CMakeFiles/STM32_Driver.dir/Startup/startup_stm32f446retx.s.obj"
+},
+{
+  "directory": "/home/stephen/Documents/STM32_Driver/STM32_Driver/build/debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -I/home/stephen/Documents/STM32_Driver/STM32_Driver/Inc -I/home/stephen/Documents/STM32_Driver/STM32_Driver/Driver/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -g -std=gnu11 -mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -Wall -Wextra -Wpedantic -Wno-unused-parameter -Og -g3 -ggdb -o CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj -c /home/stephen/Documents/STM32_Driver/STM32_Driver/Driver/Src/stm32f446xx_gpio_driver.c",
+  "file": "/home/stephen/Documents/STM32_Driver/STM32_Driver/Driver/Src/stm32f446xx_gpio_driver.c",
+  "output": "CMakeFiles/STM32_Driver.dir/Driver/Src/stm32f446xx_gpio_driver.c.obj"
+}
+]
