@@ -35,31 +35,8 @@ int main(void)
     DRV_SPI_PeripheralEnable(SPI1, ENABLE);
     while(1)
     {
-<<<<<<< HEAD
         DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, strlen(buffer));
         delay(1000);
-
-=======
-        switch (mode)
-        {
-        case 0:
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, RESET);
-            break;
-
-        case 1:
-            DRV_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
-            break;
-
-        case 2:
-            DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-            delay(500);
-            break;
-
-        default:
-            mode = 0;
-            break;
-        }
->>>>>>> cda43e76fafcbf1d4c615a1afbe38ae8e7081910
     }
 	return 0;
 }

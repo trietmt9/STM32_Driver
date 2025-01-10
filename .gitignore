@@ -1,2 +1,2 @@
-./STM32_Driver/build*/debug/
+./STM32_Driver/build/
 ./STM32_Driver/CMakeCache.txt

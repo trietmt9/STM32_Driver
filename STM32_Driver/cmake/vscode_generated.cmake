@@ -42,6 +42,14 @@ set(include_asm_DIRS ${include_asm_DIRS}
     
 )
 
+# Compiler options (adding -O0)
+set(compiler_OPTS ${compiler_OPTS} 
+	-O0
+	-ffast-math     # Enable fast math optimizations
+    -fsingle-precision-constant # Treat floating-point constants as float
+    -fno-math-errno # Disable error handling for math functions
+	)
+
 # Symbols definition
 set(symbols_c_SYMB ${symbols_c_SYMB}
 
@@ -67,4 +75,6 @@ set(link_LIBS ${link_LIBS}
 set(compiler_OPTS ${compiler_OPTS})
 
 # Linker options
-set(linker_OPTS ${linker_OPTS})
+set(linker_OPTS ${linker_OPTS}
+	-lm # Link the math library
+	)
