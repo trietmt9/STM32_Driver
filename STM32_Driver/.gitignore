@@ -1,1 +1,6 @@
-build/*
+build/debug/*
+CMakeCache.txt
+*.bin
+*.hex
+*.map
+*.elf

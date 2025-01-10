@@ -1,3 +1,0 @@
-/home/trietmt9/Documents/STM32_Driver/build/debug/CMakeFiles/STM32_Driver.dir
-/home/trietmt9/Documents/STM32_Driver/build/debug/CMakeFiles/edit_cache.dir
-/home/trietmt9/Documents/STM32_Driver/build/debug/CMakeFiles/rebuild_cache.dir
