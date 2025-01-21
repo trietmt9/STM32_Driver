@@ -11,12 +11,12 @@
 
 typedef struct 
 {
-    uint8_t PinNumber;            //* Pin Number
+    uint8_t PinNumber;             //* Pin Number
     uint8_t PinMode;               //* Pin Mode
     uint8_t PinSpeed;              //* Pin output speed
-    uint8_t PinPUPDCtrl;        //* Pin Pull up/down configuration
-    uint8_t PinOPType;           //* Pin output type
-    uint8_t PinAltFunction;      //* Pin alternative function
+    uint8_t PinPUPDCtrl;           //* Pin Pull up/down configuration
+    uint8_t PinOPType;             //* Pin output type
+    uint8_t PinAltFunction;        //* Pin alternative function
 }GPIO_PinConfig_t;
 typedef struct 
 {

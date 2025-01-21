@@ -9,7 +9,8 @@
 #define INC_STM32F446XX_SPI_DRIVER_H_
 
 #include <stm32f446xx.h>
-
+#include <stdint.h>
+#include <stddef.h>
 // SPI Status macros
 #define FLAG_RESET                          0
 #define FLAG_SET                            1
@@ -19,6 +20,14 @@
 #define SPI_TXE_FLAG                        (1 << 1)
 #define SPI_BUSY_FLAG                       (1 << 7)
 
+#define SPI_RDY                              0
+#define SPI_BUSY_IN_RX                       1
+#define SPI_BUSY_IN_TX                       2 
+
+#define SPI_EVENT_TX_COMPLETE                1
+#define SPI_EVENT_RX_COMPLETE                2
+#define SPI_EVENT_OVR_ERR                    3
+#define SPI_EVENT_CRC_ERR                    4
 // SPI Configuration struct 
 typedef struct 
 {
@@ -34,9 +43,14 @@ typedef struct
 // SPI handler struct 
 typedef struct 
 {
-    SPI_TypeDef_t* pSPIx; // SPI register handle
-    SPI_Config_t SPIConfig; // SPI configuration handle
-
+    SPI_TypeDef_t* pSPIx;    // Hold SPI register base address
+    SPI_Config_t SPIConfig;  // SPI configuration handle
+    uint8_t *pTxBuffer;      //* To store the app, Tx buffer address 
+    uint8_t *pRxBuffer;      //* To store the app, Rx buffer address
+    uint32_t TxBufferLen;    //* Length of Tx buffer
+    uint32_t RxBufferLen;    //* Length of Rx buffer
+    uint8_t TxState;         //* To store Tx state
+    uint8_t RxState;         //* To store Rx state
 }SPI_Handle_t;
 
 // SPI enumerated device mode
@@ -120,14 +134,27 @@ void DRV_SPI_Transmit(SPI_TypeDef_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer
 void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
 
 /*
+ * Send and Receive INT
+ */
+uint8_t DRV_SPI_Transmit_IT(SPI_Handle_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size);
+uint8_t DRV_SPI_Receive_IT(SPI_Handle_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
+
+/*
  * IQR and ISR 
  */
 void DRV_SPI_IRQConfig(uint8_t IRQNumber, EnOrDi_State EnOrDi);
 void DRV_SPI_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority);
-void DRV_SPI_IRQHandling(SPI_Handle_t* phspi);
+void DRV_SPI_IRQHandling(SPI_Handle_t* hspi);
 
 /*
  * SPI get flag status 
  */
 uint8_t SPI_FlagStatus(SPI_TypeDef_t* pSPIx, uint32_t Flag);
+void SPI_ClearOVERFlag(SPI_TypeDef_t* pSPIx);
+void SPI_CloseTransmission(SPI_Handle_t* hspix);
+void SPI_CloseReception(SPI_Handle_t* hspix);
+
+
+/* APPLICATION CALLBACK */
+void SPI_ApplicationEventCallBack(SPI_Handle_t* hspix, uint8_t AppEv);
 #endif /* INC_STM32F446XX_SPI_DRIVER_H_ */

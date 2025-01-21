@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "stm32f446xx.h": "c",
-        "stm32f446xx_spi_driver.h": "c"
+        "stm32f446xx_spi_driver.h": "c",
+        "stm32f446xx_gpio_driver.h": "c"
     }
 }
