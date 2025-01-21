@@ -9,6 +9,9 @@
 #define INC_STM32F446XX_H_
 #include <stdint.h>
 
+
+// define gcc attributes
+#define __weak__                            __attribute__((weak))
 //define volatile type for each peripheral register 
 
 #define __IO                                volatile  // read/write type

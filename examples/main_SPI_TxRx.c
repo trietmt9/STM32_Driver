@@ -41,8 +41,8 @@ int main(void)
         #ifdef MASTER_MODE
         if(DRV_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == 0)
         {
-            char buffer[] = "0x01";
-            DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, 1);
+            uint8_t buffer[]= 0x01;
+            DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, strlen(buffer));
             delay(1000);
         }
         #endif
