@@ -26,7 +26,7 @@ void GPIO_INIT(void);
 void SPI_INIT(void);
 void delay(uint32_t timeout)
 {
-    for(uint32_t i = 0; i < (timeout*100000); i++);
+    for(volatile uint32_t i = 0; i < (timeout*1000); i++);
 }
 int main(void)
 {

@@ -11,7 +11,7 @@ volatile uint8_t mode = 0;
 
 void delay(uint32_t timeout)
 {
-    for(uint32_t i = 0; i < (timeout*1000); i++);
+    for(volatile uint32_t i = 0; i < (timeout*1000); i++);
 }
 
 void GPIO_Init(void);
