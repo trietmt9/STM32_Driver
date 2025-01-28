@@ -10,8 +10,9 @@
 #include <stm32f446xx_gpio_driver.h>
 #include <string.h>
 
-// #define SLAVE_MODE
-#define MASTER_MODE
+#define SLAVE_MODE
+// #define MASTER_MODE
+
 
 /*
  * Alternate function mode: 5
@@ -21,41 +22,37 @@
  * PA6 ---> MISO ---> D12
  * PA7 ---> MOSI ---> D11
  */
+uint8_t rx_buffer = 0;
+uint8_t tx_buffer = 0;
 
 void GPIO_INIT(void);
 void SPI_INIT(void);
+void IRQ_INIT(void);
 void delay(uint32_t timeout)
 {
-    for(uint32_t i = 0; i < (timeout*100000); i++);
+    for(volatile uint32_t i = 0; i < (timeout*1000); i++);
 }
 int main(void)
-{
+{ 
 
-	
+
+    #ifdef MASTER_MODE
+    IRQ_INIT();
+    #endif
     GPIO_INIT();
     SPI_INIT();
     DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high
     DRV_SPI_PeripheralEnable(SPI1, ENABLE);
     while(1)
     {
-        #ifdef MASTER_MODE
-        if(DRV_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == 0)
-        {
-            char buffer[] = "0x01";
-            DRV_SPI_Transmit(SPI1,(uint8_t*) buffer, 1);
-            delay(1000);
-        }
-        #endif
+        DRV_SPI_Receive(SPI1, (uint8_t*) &rx_buffer, 1);
         #ifdef SLAVE_MODE
-        else
+        DRV_SPI_Receive(SPI1, (uint8_t*) &rx_buffer, 1);
+        if(rx_buffer == 0x01)
         {
-            uint8_t buffer[32] = {0};
-            DRV_SPI_Receive(SPI1, (uint8_t*) buffer, strlen(buffer));
-            for(uint8_t i = 0; i < strlen(buffer); i++)
-            {
-                DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-                delay(1000);
-            }
+            DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
+            tx_buffer = 0x01;
+            DRV_SPI_Transmit(SPI1,(uint8_t*) &tx_buffer, sizeof(tx_buffer));
         }
         #endif
     }
@@ -82,12 +79,17 @@ void SPI_INIT(void)
 	SPI_Handle_t hspi1                = {0};
     hspi1.pSPIx                       = SPI1;
     hspi1.SPIConfig.SPI_BusConfig     = FullDuplex;
+    #ifdef MASTER_MODE
     hspi1.SPIConfig.SPI_DeviceMode    = MASTER;
+    #endif
+    #ifdef SLAVE_MODE
+    hspi1.SPIConfig.SPI_DeviceMode    = SLAVE;
+    #endif
     hspi1.SPIConfig.SPI_SClkSpeed     = DIV_2; // generate 8MHz
     hspi1.SPIConfig.SPI_DFF           = DFF_8BITS;
     hspi1.SPIConfig.SPI_CPOL          = CPOL_L;
     hspi1.SPIConfig.SPI_CPHA          = CPHA_L;
-    hspi1.SPIConfig.SPI_SSM           = SSM_EN; // SW management disable
+    hspi1.SPIConfig.SPI_SSM           = SSM_EN; // SW management enable
     DRV_SPI_Init(&hspi1);
 }
 
@@ -116,8 +118,8 @@ void GPIO_INIT(void)
     SpiGPIO.GPIO_PinConfig.PinPUPDCtrl     = NoPUPD;
     SpiGPIO.GPIO_PinConfig.PinSpeed        = FAST;
     // NSS
-    SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_4;
-    DRV_GPIO_Init(&SpiGPIO);
+    // SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_4;
+    // DRV_GPIO_Init(&SpiGPIO);
 
     // SCK
     SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_5;
@@ -134,22 +136,59 @@ void GPIO_INIT(void)
 #ifdef MASTER_MODE
     // GPIO Button init
     GPIO_HandleTypeDef Button = {0};
-    Button.pGPIOx                         = GPIOC;
-    Button.GPIO_PinConfig.PinMode         = GPIO_INPUT;
-    Button.GPIO_PinConfig.PinPUPDCtrl     = PullUp;
+    Button.pGPIOx                                      = GPIOC;
+    Button.GPIO_PinConfig.PinNumber                    = GPIO_PIN_13;
+    Button.GPIO_PinConfig.PinMode                      = GPIO_IT_FALLING;
+    Button.GPIO_PinConfig.PinPUPDCtrl                  = PullUp; 
     DRV_GPIO_Init(&Button);
+
+    // GPIO LED init
+    GPIO_HandleTypeDef LED                          = {0};
+    LED.pGPIOx                                      = GPIOA;
+    LED.GPIO_PinConfig.PinNumber                    = GPIO_PIN_8;
+    LED.GPIO_PinConfig.PinMode                      = GPIO_OUTPUT;
+    LED.GPIO_PinConfig.PinSpeed                     = FAST;
+    LED.GPIO_PinConfig.PinOPType                    = PushPull;
+    LED.GPIO_PinConfig.PinPUPDCtrl                  = NoPUPD;
+    DRV_GPIO_Init(&LED);
 #endif
 
 #ifdef SLAVE_MODE
     // GPIO LED init
-    GPIO_HandleTypeDef LED = {0};
-    LED.GPIOx                          = GPIOA;
-    LED.GPIO_PinConfig.PinMode         = GPIO_OUTPUT;
-    LED.GPIO_PinConfig.PinOPType       = PushPull;
-    LED.GPIO_PinConfig.PinPUPDCtrl     = NoPUPD;
-    LED.GPIO_PinConfig.PinSpeed        = FAST;
-    LED.GPIO_PinConfig.PinNumber       = GPIO_PIN_5;
+    GPIO_HandleTypeDef LED              = {0};
+    LED.pGPIOx                          = GPIOA;
+    LED.GPIO_PinConfig.PinMode          = GPIO_OUTPUT;
+    LED.GPIO_PinConfig.PinOPType        = PushPull;
+    LED.GPIO_PinConfig.PinPUPDCtrl      = NoPUPD;
+    LED.GPIO_PinConfig.PinSpeed         = FAST;
+    LED.GPIO_PinConfig.PinNumber        = GPIO_PIN_8;
     DRV_GPIO_Init(&LED);
 #endif
 }
+#ifdef MASTER_MODE
+/**
+ * @brief Initialize the interrupt
+ * @details This function initializes the interrupt used by the application.
+ */
+void IRQ_INIT(void)
+{
+    DRV_GPIO_IRQConfig(IRQ_NO_EXTI15_10, ENABLE);
+    DRV_GPIO_IRQPriorityCFG(IRQ_NO_EXTI15_10, 15);
+}
+
+/**
+ * @brief Interrupt service routine for EXTI15_10
+ *
+ * This function is the interrupt service routine for EXTI15_10. It is triggered
+ * whenever the button connected to PC13 is pressed. The function increments the
+ * mode variable, which is used to switch between different modes of operation.
+ */
+void EXTI15_10_IRQHandler(void)
+{
+    DRV_GPIO_IRQHandling(GPIO_PIN_13);
+    tx_buffer = 0x01;
+    DRV_SPI_Transmit(SPI1,(uint8_t*) &tx_buffer, sizeof(tx_buffer));  
+    DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
+}
+#endif
 
