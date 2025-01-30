@@ -41,14 +41,17 @@ int main(void)
     #endif
     GPIO_INIT();
     SPI_INIT();
-    DRV_SPI_SSI(SPI1, ENABLE); // Pull NSS to high
+    DRV_SPI_SSI(SPI1, ENABLE);
     DRV_SPI_PeripheralEnable(SPI1, ENABLE);
+    #ifdef MASTER_MODE
+    DRV_GPIO_WritePin(GPIOA,GPIO_PIN_4, SET);
+    #endif
     while(1)
     {
-        DRV_SPI_Receive(SPI1, (uint8_t*) &rx_buffer, 1);
+        // DRV_SPI_Receive(SPI1, (uint8_t*) &rx_buffer, 1);
         #ifdef SLAVE_MODE
         DRV_SPI_Receive(SPI1, (uint8_t*) &rx_buffer, 1);
-        if(rx_buffer == 0x01)
+        if(rx_buffer == 0x07)
         {
             DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
             tx_buffer = 0x01;
@@ -76,20 +79,28 @@ int main(void)
  */
 void SPI_INIT(void)
 {
-	SPI_Handle_t hspi1                = {0};
+    #ifdef MASTER_MODE
+    SPI_Handle_t hspi1                = {0};
     hspi1.pSPIx                       = SPI1;
     hspi1.SPIConfig.SPI_BusConfig     = FullDuplex;
-    #ifdef MASTER_MODE
     hspi1.SPIConfig.SPI_DeviceMode    = MASTER;
-    #endif
-    #ifdef SLAVE_MODE
-    hspi1.SPIConfig.SPI_DeviceMode    = SLAVE;
-    #endif
     hspi1.SPIConfig.SPI_SClkSpeed     = DIV_2; // generate 8MHz
     hspi1.SPIConfig.SPI_DFF           = DFF_8BITS;
     hspi1.SPIConfig.SPI_CPOL          = CPOL_L;
     hspi1.SPIConfig.SPI_CPHA          = CPHA_L;
     hspi1.SPIConfig.SPI_SSM           = SSM_EN; // SW management enable
+    #endif
+    #ifdef SLAVE_MODE
+    SPI_Handle_t hspi1                = {0};
+    hspi1.pSPIx                       = SPI1;
+    hspi1.SPIConfig.SPI_BusConfig     = FullDuplex;
+    hspi1.SPIConfig.SPI_DeviceMode    = SLAVE;
+    hspi1.SPIConfig.SPI_SClkSpeed     = DIV_2; // generate 8MHz
+    hspi1.SPIConfig.SPI_DFF           = DFF_8BITS;
+    hspi1.SPIConfig.SPI_CPOL          = CPOL_L;
+    hspi1.SPIConfig.SPI_CPHA          = CPHA_L;
+    hspi1.SPIConfig.SPI_SSM           = SSM_DI; // SW management disable
+    #endif
     DRV_SPI_Init(&hspi1);
 }
 
@@ -117,9 +128,12 @@ void GPIO_INIT(void)
     SpiGPIO.GPIO_PinConfig.PinOPType       = PushPull;
     SpiGPIO.GPIO_PinConfig.PinPUPDCtrl     = NoPUPD;
     SpiGPIO.GPIO_PinConfig.PinSpeed        = FAST;
+
+    #ifdef SLAVE_MODE
     // NSS
-    // SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_4;
-    // DRV_GPIO_Init(&SpiGPIO);
+    SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_4;
+    DRV_GPIO_Init(&SpiGPIO);
+    #endif
 
     // SCK
     SpiGPIO.GPIO_PinConfig.PinNumber = GPIO_PIN_5;
@@ -150,6 +164,9 @@ void GPIO_INIT(void)
     LED.GPIO_PinConfig.PinSpeed                     = FAST;
     LED.GPIO_PinConfig.PinOPType                    = PushPull;
     LED.GPIO_PinConfig.PinPUPDCtrl                  = NoPUPD;
+    DRV_GPIO_Init(&LED);
+    // NSS
+    LED.GPIO_PinConfig.PinNumber = GPIO_PIN_4;
     DRV_GPIO_Init(&LED);
 #endif
 
@@ -187,7 +204,9 @@ void EXTI15_10_IRQHandler(void)
 {
     DRV_GPIO_IRQHandling(GPIO_PIN_13);
     tx_buffer = 0x01;
+    DRV_GPIO_WritePin(GPIOA,GPIO_PIN_4, RESET);
     DRV_SPI_Transmit(SPI1,(uint8_t*) &tx_buffer, sizeof(tx_buffer));  
+    DRV_GPIO_WritePin(GPIOA,GPIO_PIN_4, SET);
     DRV_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
 }
 #endif
