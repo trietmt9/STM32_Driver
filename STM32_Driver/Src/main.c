@@ -203,7 +203,7 @@ void IRQ_INIT(void)
 void EXTI15_10_IRQHandler(void)
 {
     DRV_GPIO_IRQHandling(GPIO_PIN_13);
-    tx_buffer = 0x01;
+    tx_buffer = 0x07;
     DRV_GPIO_WritePin(GPIOA,GPIO_PIN_4, RESET);
     DRV_SPI_Transmit(SPI1,(uint8_t*) &tx_buffer, sizeof(tx_buffer));  
     DRV_GPIO_WritePin(GPIOA,GPIO_PIN_4, SET);

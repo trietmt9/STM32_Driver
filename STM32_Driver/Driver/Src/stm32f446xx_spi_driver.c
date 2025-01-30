@@ -271,7 +271,7 @@ void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_
 
 
 /*******************************************************
- * @fn                     - DRV_GPIO_IRQConfig
+ * @fn                     - DRV_SPI_IRQConfig
  * 
  * @brief                  - Configure interrupt mode
  * 
