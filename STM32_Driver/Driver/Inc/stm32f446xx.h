@@ -16,6 +16,18 @@
 
 #define __IO                                volatile  // read/write type
 
+// Definition macros of EXTI numbers (check Priority column in Vector table)
+#define IRQ_NO_EXTI0                                    13
+#define IRQ_NO_EXTI1                                    14
+#define IRQ_NO_EXTI2                                    15
+#define IRQ_NO_EXTI3                                    16
+#define IRQ_NO_EXTI4                                    17
+#define IRQ_NO_EXTI9_5                                  23
+#define IRQ_NO_EXTI15_10                                40
+#define IRQ_NO_SPI1                                     42
+#define IRQ_NO_SPI2                                     43
+#define IRQ_NO_SPI3                                     58
+#define IRQ_NO_SPI4                                     91
 /****************************** Processor Specific Details ******************************/
 /*
  * ARM cortex M4 Processor NVIC ISERx register address
@@ -335,13 +347,13 @@ typedef enum
 #define SPI4_REG_RESET()                      do{ (RCC->AHB2RSTR |=(1<<13)); (RCC->AHB2RSTR &= ~(1<<13)); }while(0)
 
 #define GPIO_BASE_TO_CODE(x)                    ((x == GPIOA)? 0:\
-                                                (x == GPIOB) ? 1:\
-                                                (x == GPIOC) ? 2:\
-                                                (x == GPIOD) ? 3:\
-                                                (x == GPIOE) ? 4:\
-                                                (x == GPIOF) ? 5:\
-                                                (x == GPIOG) ? 6:\
-                                                (x == GPIOH) ? 7:0)
+                                                 (x == GPIOB) ? 1:\
+                                                 (x == GPIOC) ? 2:\
+                                                 (x == GPIOD) ? 3:\
+                                                 (x == GPIOE) ? 4:\
+                                                 (x == GPIOF) ? 5:\
+                                                 (x == GPIOG) ? 6:\
+                                                 (x == GPIOH) ? 7:0)
                 
 #include <stm32f446xx_gpio_driver.h>
 #include <stm32f446xx_spi_driver.h>

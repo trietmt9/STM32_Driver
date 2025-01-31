@@ -6,9 +6,9 @@
  */
 #include <stm32f446xx_spi_driver.h>
 
-static void spi_txe_int_handle(SPI_Handle_t *hspix);
-static void spi_rxe_int_handle(SPI_Handle_t *hspix);
-static void spi_ovr_err_int_handle(SPI_Handle_t *hspix);
+static void spi_txe_int_handle(SPI_HandleTypeDef *hspix);
+static void spi_rxe_int_handle(SPI_HandleTypeDef *hspix);
+static void spi_ovr_err_int_handle(SPI_HandleTypeDef *hspix);
 /*******************************************************
  * @fn                     - DRV_SPI_Pclkcontrol
  * 
@@ -48,7 +48,7 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_Init(SPI_Handle_t* hspix)
+void DRV_SPI_Init(SPI_HandleTypeDef* hspix)
 {
     // Configure CR1 register 
     uint32_t tempreg = 0;
@@ -162,7 +162,7 @@ void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_DeInit(SPI_Handle_t* hspix)
+void DRV_SPI_DeInit(SPI_HandleTypeDef* hspix)
 {
         if(hspix->pSPIx == SPI1) SPI1_REG_RESET();
         else if(hspix->pSPIx == SPI2) SPI2_REG_RESET();
@@ -344,7 +344,7 @@ void DRV_SPI_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority)
  * 
  * @return                 - void
 ********************************************************/
-void DRV_SPI_IRQHandling(SPI_Handle_t* hspi)
+void DRV_SPI_IRQHandling(SPI_HandleTypeDef* hspi)
 {
     uint8_t temp1, temp2; 
     // Check for TXE 
@@ -393,7 +393,7 @@ void DRV_SPI_IRQHandling(SPI_Handle_t* hspi)
  *
  * @warning This function does not handle errors or timeouts.
 ********************************************************/
-uint8_t DRV_SPI_Transmit_IT(SPI_Handle_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
+uint8_t DRV_SPI_Transmit_IT(SPI_HandleTypeDef* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size)
 {
     uint8_t state = hspix->TxState;
     if(state != SPI_BUSY_IN_RX)
@@ -430,7 +430,7 @@ uint8_t DRV_SPI_Transmit_IT(SPI_Handle_t* hspix, uint8_t* pTx_Buffer, uint32_t B
  * @note This function is non-blocking. The actual data reception is handled in
  *       the interrupt service routine.
 *******************************************************/
-uint8_t DRV_SPI_Receive_IT(SPI_Handle_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size)
+uint8_t DRV_SPI_Receive_IT(SPI_HandleTypeDef* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size)
 {
      uint8_t state = hspix->RxState;
     if(state != SPI_BUSY_IN_TX)
@@ -455,7 +455,7 @@ uint8_t DRV_SPI_Receive_IT(SPI_Handle_t* hspix, uint8_t* pRx_Buffer, uint32_t Bu
 
 
 // Help function 
-static void spi_txe_int_handle(SPI_Handle_t *hspix)
+static void spi_txe_int_handle(SPI_HandleTypeDef *hspix)
 {
     // 1. Check DFF bit in CR1 
         if(hspix->pSPIx->CR1 & (1 << 11))
@@ -478,7 +478,7 @@ static void spi_txe_int_handle(SPI_Handle_t *hspix)
             SPI_ApplicationEventCallBack(hspix, SPI_EVENT_TX_COMPLETE);
         }
 }
-static void spi_rxe_int_handle(SPI_Handle_t *hspix)
+static void spi_rxe_int_handle(SPI_HandleTypeDef *hspix)
 {
     //* 1. Check DFF bit in CR1 
         if(hspix->pSPIx->CR1 & (1 << 11))
@@ -507,7 +507,7 @@ static void spi_rxe_int_handle(SPI_Handle_t *hspix)
             SPI_ApplicationEventCallBack(hspix, SPI_EVENT_RX_COMPLETE);
         }
 }
-static void spi_ovr_err_int_handle(SPI_Handle_t *hspix)
+static void spi_ovr_err_int_handle(SPI_HandleTypeDef *hspix)
 {
     uint8_t temp; 
     // 1. Clear the OVR flag 
@@ -520,14 +520,14 @@ static void spi_ovr_err_int_handle(SPI_Handle_t *hspix)
     SPI_ApplicationEventCallBack(hspix, SPI_EVENT_OVR_ERR);
 }
 
-void SPI_CloseTransmission(SPI_Handle_t* hspix)
+void SPI_CloseTransmission(SPI_HandleTypeDef* hspix)
 {
     hspix->pSPIx->CR2 &=~ (1 << 7);
     hspix->pTxBuffer = NULL;
     hspix->TxBufferLen = 0;
     hspix->TxState = SPI_RDY;
 }
-void SPI_CloseReception(SPI_Handle_t* hspix)
+void SPI_CloseReception(SPI_HandleTypeDef* hspix)
 {
     hspix->pSPIx->CR2 &=~ (1 << 6);
     hspix->pRxBuffer = NULL;
@@ -544,7 +544,7 @@ void SPI_ClearOVERFlag(SPI_TypeDef_t* pSPIx)
     (void)temp;
 }
 
-__weak__ void SPI_ApplicationEventCallBack(SPI_Handle_t* hspix, uint8_t AppEv)
+__weak__ void SPI_ApplicationEventCallBack(SPI_HandleTypeDef* hspix, uint8_t AppEv)
 {
 
 }

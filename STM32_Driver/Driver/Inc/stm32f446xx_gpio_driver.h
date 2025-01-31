@@ -64,16 +64,6 @@ typedef enum
     
 }GPIO_PUPD;
 
-// Definition macros of EXTI numbers
-#define IRQ_NO_EXTI0                       13
-#define IRQ_NO_EXTI1                       14
-#define IRQ_NO_EXTI2                       15
-#define IRQ_NO_EXTI3                       16
-#define IRQ_NO_EXTI4                       17
-#define IRQ_NO_EXTI9_5                     23
-#define IRQ_NO_EXTI15_10                   40
-
-
 /* Define GPIO pin number */
 
 #define GPIO_PIN_0                          0

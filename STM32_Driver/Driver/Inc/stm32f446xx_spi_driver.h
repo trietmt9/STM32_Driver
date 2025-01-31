@@ -28,6 +28,8 @@
 #define SPI_EVENT_RX_COMPLETE                2
 #define SPI_EVENT_OVR_ERR                    3
 #define SPI_EVENT_CRC_ERR                    4
+
+
 // SPI Configuration struct 
 typedef struct 
 {
@@ -51,7 +53,7 @@ typedef struct
     uint32_t RxBufferLen;    //* Length of Rx buffer
     uint8_t TxState;         //* To store Tx state
     uint8_t RxState;         //* To store Rx state
-}SPI_Handle_t;
+}SPI_HandleTypeDef;
 
 // SPI enumerated device mode
 enum
@@ -121,8 +123,8 @@ void DRV_SPI_Pclkcontrol(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 /*
  * Init, Deinit and Enable 
  */
-void DRV_SPI_Init(SPI_Handle_t* hspix);
-void DRV_SPI_DeInit(SPI_Handle_t* hspix);
+void DRV_SPI_Init(SPI_HandleTypeDef* hspix);
+void DRV_SPI_DeInit(SPI_HandleTypeDef* hspix);
 void DRV_SPI_PeripheralEnable(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSI(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
 void DRV_SPI_SSOE(SPI_TypeDef_t* pSPIx, EnOrDi_State EnOrDi);
@@ -136,25 +138,25 @@ void DRV_SPI_Receive(SPI_TypeDef_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_
 /*
  * Send and Receive INT
  */
-uint8_t DRV_SPI_Transmit_IT(SPI_Handle_t* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size);
-uint8_t DRV_SPI_Receive_IT(SPI_Handle_t* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
+uint8_t DRV_SPI_Transmit_IT(SPI_HandleTypeDef* hspix, uint8_t* pTx_Buffer, uint32_t Buffer_Size);
+uint8_t DRV_SPI_Receive_IT(SPI_HandleTypeDef* hspix, uint8_t* pRx_Buffer, uint32_t Buffer_Size);
 
 /*
  * IQR and ISR 
  */
 void DRV_SPI_IRQConfig(uint8_t IRQNumber, EnOrDi_State EnOrDi);
 void DRV_SPI_IRQPriorityCFG(uint8_t IRQNumber, uint8_t IRQPriority);
-void DRV_SPI_IRQHandling(SPI_Handle_t* hspi);
+void DRV_SPI_IRQHandling(SPI_HandleTypeDef* hspi);
 
 /*
  * SPI get flag status 
  */
 uint8_t SPI_FlagStatus(SPI_TypeDef_t* pSPIx, uint32_t Flag);
 void SPI_ClearOVERFlag(SPI_TypeDef_t* pSPIx);
-void SPI_CloseTransmission(SPI_Handle_t* hspix);
-void SPI_CloseReception(SPI_Handle_t* hspix);
+void SPI_CloseTransmission(SPI_HandleTypeDef* hspix);
+void SPI_CloseReception(SPI_HandleTypeDef* hspix);
 
 
 /* APPLICATION CALLBACK */
-void SPI_ApplicationEventCallBack(SPI_Handle_t* hspix, uint8_t AppEv);
+void SPI_ApplicationEventCallBack(SPI_HandleTypeDef* hspix, uint8_t AppEv);
 #endif /* INC_STM32F446XX_SPI_DRIVER_H_ */
