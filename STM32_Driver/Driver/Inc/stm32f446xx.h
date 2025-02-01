@@ -226,6 +226,20 @@ typedef struct
     __IO uint32_t I2SPR;            //* I2S prescaler register                       offset: 0x20
 }SPI_TypeDef_t;
 
+/** I2C configuration definition structure**/
+typedef struct
+{   
+    __IO uint32_t CR1;              //* Control Register 1                           offset: 0x00
+    __IO uint32_t CR2;              //* Control Register 2                           offset: 0x04 
+    __IO uint32_t OAR1;             //* Own Address Register 1                       offset: 0x08
+    __IO uint32_t OAR2;             //* Own Address Register 2                       offset: 0x0C 
+    __IO uint32_t DR;               //* Data Register                                offset: 0x10 
+    __IO uint32_t SR1;              //* Status Register 1                            offset: 0x14 
+    __IO uint32_t SR2;              //* Status Register 2                            offset: 0x18
+    __IO uint32_t CCR;              //* Clock Control Register                       offset: 0x1C
+    __IO uint32_t TRISE;            //* Rise time Register                           offset: 0x20
+    __IO uint32_t FLTR;             //* Filter Register                              offset: 0x24 
+}I2C_Typedef_t;
 typedef enum 
 {
     DISABLE = 0, 
@@ -262,6 +276,11 @@ typedef enum
 #define SPI2                                ((SPI_TypeDef_t*)SPI2_BASE)
 #define SPI3                                ((SPI_TypeDef_t*)SPI3_BASE)
 #define SPI4                                ((SPI_TypeDef_t*)SPI4_BASE)
+
+// I2C peripheral define 
+#define I2C1                                ((I2C_Typedef_t*)I2C1_BASE)
+#define I2C2                                ((I2C_Typedef_t*)I2C2_BASE)
+#define I2C3                                ((I2C_Typedef_t*)I2C3_BASE)
 
 /*
  * Enable GPIOx peripherals clock macros 
